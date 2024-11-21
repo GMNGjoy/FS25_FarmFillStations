@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <translationContributors>
+        <translationContributor>Farmsim Tim</translationContributor>
+    </translationContributors>
+    <texts>
+        <text name="shopItem_fieldworkFillStation" text="Feldarbeit-Füllstation" />
+        <text name="shopItem_fieldworkFillStationFree" text="Kostenlose Feldarbeit-Füllstation" />
+        <text name="shopItem_fieldworkFillStationSilo" text="Feldarbeits-Füllstationssilo" />
+        <text name="shopItem_fieldworkFillStationOld" text="Alte Feldarbeitstankstelle" />
+        <text name="shopItem_fieldworkFillStationOldFree" text="Alte Tankstelle für freie Feldarbeit" />
+        <text name="shopItem_fieldworkFillStationOldSilo" text="Altes Silo der Feldarbeitsfüllstation" />
+        <text name="function_fieldworkFillStation" text="Laden Sie Ihre Produkte für alle Ihre Aufträge auf, 30 % Rabatt bei Schüttgut!" />
+        <text name="function_fieldworkFillStationSilo" text="Silo für Ihren Bauernhof zur Lagerung aller Ihrer Feldarbeitsmaterialien." />
+        <text name="function_oldButStillGood" text="Es ist zwar etwas eingerostet, aber immer zuverlässig." />
+        <text name="shopItem_husbandryFillStation" text="Füllstation für Tierhaltung" />
+        <text name="shopItem_husbandryFillStationFree" text="Kostenlose Tankstelle für Tierhaltung" />
+        <text name="function_husbandryFillStation" text="Füttern Sie Ihre Tiere ohne den Aufwand der Landwirtschaft, 30 % Rabatt beim Kauf großer Mengen!" />
+        <text name="shopItem_liquidFillStation" text="Liquid Fill Station" />
+        <text name="shopItem_liquidFillStationFree" text="Free Liduid Fill Station" />
+        <text name="function_liquidFillStation" text="Fill your tank or tanker, 30% discount for buying bulk!" />
+        <text name="shopItem_bulkFillStation" text="Bulk Fill Station" />
+        <text name="shopItem_bulkFillStationFree" text="Free Bulk Fill Station" />
+        <text name="function_bulkFillStation" text="A bit short? Buy any bulk product at a 30% discount!" />
+        <text name="configuration_patina" text="Patina" />
+        <text name="patina_light" text="Light Patina" />
+        <text name="patina_dark" text="Dark Patina" />
+        <text name="binColor_black1" text="Blasses Schwarz" />
+        <text name="binColor_black2" text="Ultra Black" />
+    </texts>
+</l10n>

@@ -1,0 +1,20 @@
+Load up your implements for all of your fieldwork needs!
+
+Two versions available:
+- Fieldwork Fill Station -- Get a 25% discount for buying in bulk from the fill station!
+- Free Fieldwork Fill Station -- free Free FREE! Get all available fill types for free!
+
+Fill Types:
+- Seeds
+- Fertilizer
+- Lime
+- Liquid Fertilizer
+- Liquid Herbicide
+- Silage Additive
+
+Cost: 15,000
+Brand: Lizard Farming
+Location: Placeable > Buildings > Containers
+
+
+Mod Support provided through GMNGjoy discord: http://gmngjoy.com/discord #fieldwork-fill-station

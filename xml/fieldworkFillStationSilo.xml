@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="siloConfigurable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_fieldworkFillStationSilo</name>
+        <functions>
+            <function>$l10n_function_fieldworkFillStationSilo</function>
+        </functions>
+        <image>icons/store_fieldworkFillStation_greyalu.png</image>
+        <price>15000</price>
+        <dailyUpkeep>2</dailyUpkeep>
+        <lifetime>100</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>PLACEABLE</species>
+        <category>fillableTanks</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>containers</tab>
+        </brush>
+        <storeIconRendering>
+            <settings cameraYRot="22" cameraXRot="-5" showTriggerMarkers="false"/>
+            <!-- <objectBundle>
+                <object filename="fillStation.i3d">
+                    <node node="0>" translation="-12 0 24" rotation="0 0 0" scale="2 2 2"/>
+                </object>
+            </objectBundle> -->
+        </storeIconRendering>
+    </storeData>
+
+    <base>
+        <filename>i3d/fillStation.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas />
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="$data/placeables/shared/sellingStationGeneric/sellingStationGenericSmall.i3d" node="0" linkNode="unloadVisualLinkNode" />
+    </dynamicallyLoadedParts>
+
+    <silo playerActionTrigger="refillPlayerTrigger">
+        <loadingStation node="loadingTrigger" supportsExtension="false">
+            <loadTrigger triggerNode="loadingTrigger" aiNode="loadingStationAINode" fillTypes="SEEDS LIME FERTILIZER LIQUIDFERTILIZER HERBICIDE SILAGE_ADDITIVE MANURE LIQUIDMANURE DIGESTATE WATER" fillLitersPerSecond="4000">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect" materialType="pipe" fadeTime="0.5" maxBending="0" shapeScaleSpread="0.8 0.8 1 0" controlPoint="3 0 0 0"/>
+                <effectNode effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+            </loadTrigger>
+        </loadingStation>
+
+        <unloadingStation supportsExtension="false">
+            <unloadTrigger fillTypes="SEEDS LIME FERTILIZER LIQUIDFERTILIZER HERBICIDE SILAGE_ADDITIVE MANURE LIQUIDMANURE DIGESTATE WATER" exactFillRootNode="unloadBulkTrigger" aiNode="unloadStationAINode" />
+            <palletTrigger fillTypes="SEEDS LIME FERTILIZER LIQUIDFERTILIZER HERBICIDE SILAGE_ADDITIVE" triggerNode="unloadPalletTrigger" />
+        </unloadingStation>
+
+        <storages>
+            <storage node="storage" fillTypes="SEEDS LIME FERTILIZER LIQUIDFERTILIZER HERBICIDE SILAGE_ADDITIVE MANURE LIQUIDMANURE DIGESTATE WATER" capacity="100000" supportsMultipleFillTypes="true" isExtension="false" />
+        </storages>
+    </silo>
+
+    <hotspots>
+        <hotspot type="LOADING" linkNode="mapPosition" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="markerLoading" filename="$data/shared/assets/marker/markerIconLoad.i3d" adjustToGround="true" />
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconWrench.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <!-- leverage the solar panels customization to provide patina -->
+    <solarPanels>
+        <solarPanelsConfigurations title="$l10n_configuration_patina">
+            <solarPanelsConfiguration name="$l10n_ui_no" isActive="true" price="0" incomePerHour="0">
+                <objectChange node="binColorable" visibilityActive="true"/>
+                <objectChange node="binRustyLight" visibilityActive="false"/>
+                <objectChange node="binRustyDark" visibilityActive="false"/>
+            </solarPanelsConfiguration>
+            <solarPanelsConfiguration name="$l10n_patina_light" isActive="false" price="0" incomePerHour="0">
+                <objectChange node="binRustyLight" visibilityActive="true"/>
+                <objectChange node="binRustyDark" visibilityActive="false"/>
+                <objectChange node="binColorable" visibilityActive="false"/>
+            </solarPanelsConfiguration>
+            <solarPanelsConfiguration name="$l10n_patina_dark" isActive="false" price="0" incomePerHour="0">
+                <objectChange node="binRustyLight" visibilityActive="false"/>
+                <objectChange node="binRustyDark" visibilityActive="true"/>
+                <objectChange node="binColorable" visibilityActive="false"/>
+            </solarPanelsConfiguration>
+        </solarPanelsConfigurations>
+    </solarPanels>
+
+    <colorConfigurations useDefaultColors="false" postLoadObjectChange="false" price="0">
+        <colorConfiguration color="GMNG_BLACK1" isDefault="true" />
+        <colorConfiguration color="GMNG_BLACK2" />
+        <colorConfiguration color="RUDOLFHOERMANN_DARKGREY" />
+        <colorConfiguration color="RUDOLFHOERMANN_GREYALU" />
+        <colorConfiguration color="SHARED_GREY3" />
+        <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREY" />
+        <colorConfiguration color="SHARED_WHITE2" />
+        <colorConfiguration color="RUDOLFHOERMANN_OXIDRED" />
+        <colorConfiguration color="CASEIH_RED1" />
+        <colorConfiguration color="RUDOLFHOERMANN_RED" />
+        <colorConfiguration color="INTERNATIONAL_RED1" />
+        <colorConfiguration color="SCHWARZMUELLER_ORANGE1" />
+        <colorConfiguration color="TATRA_ORANGE2" />
+        <colorConfiguration color="STIHL_ORANGE_1" />
+        <colorConfiguration color="SCHUITEMAKER_ORANGE1" />
+        <colorConfiguration color="SCHWARZMUELLER_YELLOW1" />
+        <colorConfiguration color="SHARED_YELLOW1" />
+        <colorConfiguration color="RUDOLFHOERMANN_GREEN" />
+        <colorConfiguration color="LIZARD_OLIVE1"/>
+        <colorConfiguration color="JOHNDEERE_GREEN1" />
+        <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREEN" />
+        <colorConfiguration color="RUDOLFHOERMANN_BLUE" />
+        <colorConfiguration color="SHARED_BLUE1"/>
+        <colorConfiguration color="NEWHOLLAND_BLUE1"/>
+        <colorConfiguration color="LIZARD_BLUE1"/>
+        <colorConfiguration color="LIZARD_PINK1" />
+        <colorConfiguration color="LIZARD_PURPLE1" />
+        <colorConfiguration color="RUDOLFHOERMANN_BEIGE" />
+        <colorConfiguration color="RUDOLFHOERMANN_DARKBEIGE" />
+        <colorConfiguration color="SHARED_BROWN1" />
+        <colorConfiguration color="RUDOLFHOERMANN_BROWN" />
+        
+        <node node="binColorableBody" />
+    </colorConfigurations>
+
+    <i3dMappings>
+        <i3dMapping id="binLinkNode" node="0>0" />
+        <i3dMapping id="binColorable" node="0>0|0" />  
+        <i3dMapping id="binColorableBody" node="0>0|0|1" />   
+        <i3dMapping id="binRusty" node="0>0|1" />
+
+        <i3dMapping id="clearArea1Start" node="0>1|0" />
+        <i3dMapping id="clearArea1Width" node="0>1|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>1|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>2|0" />
+        <i3dMapping id="levelArea1Width" node="0>2|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>2|0|1" />
+        <i3dMapping id="testArea1Start" node="0>3|0" />
+        <i3dMapping id="testArea1End" node="0>3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>4|0|0" />
+        
+        <i3dMapping id="collision" node="0>5|0" />
+        <i3dMapping id="tipCollision" node="0>5|1" />
+
+        <i3dMapping id="mapPosition" node="0>6|0" />
+        <i3dMapping id="playerTrigger" node="0>6|1" />
+        <i3dMapping id="playerTriggerMarker" node="0>6|1|0" />
+
+        <!-- buying station -->
+        <i3dMapping id="buyingStation" node="0>7" />        
+        <i3dMapping id="pipeEffect" node="0>7|0|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>7|0|1" />
+        <i3dMapping id="dischargeNode" node="0>7|1" />
+        <i3dMapping id="loadingTrigger" node="0>7|2" />
+        <i3dMapping id="aiNodeLoading" node="0>7|3" />
+        <i3dMapping id="markerLoading" node="0>7|4" />
+
+        <!-- selling station -->
+        <i3dMapping id="sellingStation" node="0>8" />
+        <i3dMapping id="unloadBulkTrigger" node="0>8|0" />
+        <i3dMapping id="unloadPalletTrigger" node="0>8|1" />
+        <i3dMapping id="unloadStationAINode" node="0>8|2" />
+        <i3dMapping id="markerUnloading" node="0>8|3" />  
+        <i3dMapping id="unloadVisualLinkNode" node="0>8|4" />
+    </i3dMappings>
+</placeable>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="15" filename="$data/maps/mapFR/textures/buildingDecalsGrunge_diffuse.png"/>
+    <File fileId="16" filename="$data/maps/mapFR/textures/buildingDecalsGrunge_normal.png"/>
+    <File fileId="17" filename="$data/maps/mapFR/textures/buildingDecalsGrunge_specular.png"/>
+    <File fileId="11" filename="$data/maps/mapFR/textures/buildingDecalsRust_diffuse.png"/>
+    <File fileId="12" filename="$data/maps/mapFR/textures/buildingDecalsRust_normal.png"/>
+    <File fileId="13" filename="$data/maps/mapFR/textures/buildingDecalsRust_specular.png"/>
+    <File fileId="21" filename="$data/maps/mapUS/textures/doorsSET_diffuse.png"/>
+    <File fileId="22" filename="$data/maps/mapUS/textures/doorsSET_specular.png"/>
+    <File fileId="1" filename="$data/maps/mapUS/textures/farmSilo02_diffuse.png"/>
+    <File fileId="9" filename="$data/maps/mapUS/textures/farmSilo02_height.png"/>
+    <File fileId="5" filename="$data/maps/mapUS/textures/farmSilo02_mask.png"/>
+    <File fileId="2" filename="$data/maps/mapUS/textures/farmSilo02_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapUS/textures/farmSilo02_specular.png"/>
+    <File fileId="18" filename="$data/maps/mapUS/textures/industrialWindows_diffuse.png"/>
+    <File fileId="19" filename="$data/maps/mapUS/textures/industrialWindows_normal.png"/>
+    <File fileId="20" filename="$data/maps/mapUS/textures/industrialWindows_specular.png"/>
+    <File fileId="34" filename="$data/maps/mapUS/textures/props/chimneyPipe02_diffuse.png"/>
+    <File fileId="35" filename="$data/maps/mapUS/textures/props/chimneyPipe02_normal.png"/>
+    <File fileId="36" filename="$data/maps/mapUS/textures/props/chimneyPipe02_specular.png"/>
+    <File fileId="31" filename="$data/maps/mapUS/textures/props/electricalMeter_diffuse.png"/>
+    <File fileId="32" filename="$data/maps/mapUS/textures/props/electricalMeter_normal.png"/>
+    <File fileId="33" filename="$data/maps/mapUS/textures/props/electricalMeter_specular.png"/>
+    <File fileId="42" filename="$data/maps/mapUS/textures/props/towerGrainOutlet01_diffuse.png"/>
+    <File fileId="43" filename="$data/maps/mapUS/textures/props/towerGrainOutlet01_normal.png"/>
+    <File fileId="44" filename="$data/maps/mapUS/textures/props/towerGrainOutlet01_specular.png"/>
+    <File fileId="38" filename="$data/maps/mapUS/textures/railroadStorage01_02_diffuse.png"/>
+    <File fileId="39" filename="$data/maps/mapUS/textures/railroadStorage01_02_normal.png"/>
+    <File fileId="40" filename="$data/maps/mapUS/textures/railroadStorage01_02_specular.png"/>
+    <File fileId="28" filename="$data/maps/textures/shared/props/icicles_diffuse.png"/>
+    <File fileId="29" filename="$data/maps/textures/shared/props/icicles_normal.png"/>
+    <File fileId="30" filename="$data/maps/textures/shared/props/icicles_specular.png"/>
+    <File fileId="24" filename="$data/maps/textures/shared/snow_diffuse.png"/>
+    <File fileId="25" filename="$data/maps/textures/shared/snow_normal.png"/>
+    <File fileId="8" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="23" filename="$data/shaders/colorShader.xml"/>
+    <File fileId="14" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="45" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="26" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="46" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="acmat0" materialId="94" diffuseColor="0 0 0 1" specularColor="1 1 1">
+    </Material>
+    <Material name="acmat1" materialId="95" diffuseColor="0.0156863 0.0156863 0.0156863 1" specularColor="0.6 1 0.6">
+    </Material>
+    <Material name="buildingDecalsGrunge_mat" materialId="4" alphaBlending="true" customShaderId="14">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+    </Material>
+    <Material name="buildingDecalsRust_mat" materialId="5" alphaBlending="true" customShaderId="14">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+    </Material>
+    <Material name="chimneyPipe02_mat" materialId="6">
+      <Texture fileId="34"/>
+      <Normalmap fileId="35"/>
+      <Glossmap fileId="36"/>
+    </Material>
+    <Material name="doorsSET_mat" materialId="7" customShaderId="23">
+      <Texture fileId="21"/>
+      <Glossmap fileId="22"/>
+      <CustomParameter name="mixAmount" value="0.85 0.15 12 0.12"/>
+      <CustomParameter name="color" value="0.165 0.2 0.15 12"/>
+    </Material>
+    <Material name="electricalMeter_mat" materialId="8">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <Glossmap fileId="33"/>
+    </Material>
+    <Material name="farmSilo02_mat" materialId="9" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Custommap name="mParallaxMap" fileId="9"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="icicles_mat" materialId="10" alphaBlending="true" customShaderId="26" customShaderVariation="icicle">
+      <Texture fileId="28"/>
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="30"/>
+      <Refractionmap coeff="1" bumpScale="0.1"/>
+    </Material>
+    <Material name="industrialWindows_mat" materialId="11">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="20"/>
+    </Material>
+    <Material name="lambert1" materialId="12" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert2" materialId="96" diffuseColor="0.494118 0.494118 0.494118 1">
+      <Normalmap fileId="46"/>
+    </Material>
+    <Material name="railroadStorage01_02_mat" materialId="13" customShaderId="4">
+      <Texture fileId="38"/>
+      <Normalmap fileId="39" bumpDepth="0.1"/>
+      <Glossmap fileId="40"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0.12 0.12"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="snow_mat" materialId="14" customShaderId="26">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25" bumpDepth="0.5"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="towerGrainOutlet01_mat" materialId="15" customShaderId="45">
+      <Texture fileId="42"/>
+      <Normalmap fileId="43"/>
+      <Glossmap fileId="44"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="16" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="TransportationFillStation.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="TranspoFillStation" nodeId="116">
+        <TransformGroup name="farmSilo02_PLACE" nodeId="47">
+          <TransformGroup name="farmSilo02base" rotation="-2.2824e-08 0 0" nodeId="48" lodDistance="0 100">
+            <Shape shapeId="1" name="LOD0" clipDistance="300" nodeId="49" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="LOD1" static="true" clipDistance="500" nodeId="50" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="occluderMesh" clipDistance="250" nodeId="51" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true"/>
+          </TransformGroup>
+          <TransformGroup name="farmSilo02basehut" rotation="-2.2824e-08 0 0" nodeId="52" lodDistance="0 100">
+            <TransformGroup name="LOD0" nodeId="53">
+              <TransformGroup name="decals" nodeId="54">
+                <Shape shapeId="4" name="decals_rust" clipDistance="85" nodeId="55" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="5" name="decals_grunge" clipDistance="85" nodeId="56" materialIds="4" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </TransformGroup>
+              <Shape shapeId="6" name="interiors" clipDistance="200" nodeId="57" materialIds="9" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="windows" clipDistance="200" nodeId="58" materialIds="11" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="door" translation="0 -2.52435e-31 -6.31089e-31" clipDistance="300" nodeId="59" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="9" name="farmSilo02basehut" clipDistance="300" nodeId="60" materialIds="9" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="winter" nodeId="61">
+                <Shape shapeId="10" name="snow" clipDistance="200" nodeId="62" materialIds="14" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024"/>
+                <Shape shapeId="11" name="icicle" clipDistance="85" nodeId="63" materialIds="10" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="LOD1" nodeId="64">
+              <Shape shapeId="12" name="interiors" translation="-2.27374e-15 0 0" clipDistance="200" nodeId="65" materialIds="9" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="13" name="windows_LOD" translation="-2.27374e-15 0 0" static="true" clipDistance="300" nodeId="66" materialIds="11" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="14" name="door" translation="-2.27374e-15 5.10592e-16 5.68434e-16" static="true" clipDistance="300" nodeId="67" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="15" name="farmSilo02basehut_LOD" translation="-2.27374e-15 0 0" static="true" clipDistance="300" nodeId="68" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <Shape shapeId="16" name="occluderMesh" clipDistance="250" nodeId="69" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true"/>
+          </TransformGroup>
+          <TransformGroup name="farmSilo02top" translation="0 12 -4.73045e-09" rotation="-2.2824e-08 0 0" nodeId="70" lodDistance="0 100">
+            <Shape shapeId="17" name="LOD0" translation="0 -7.95808e-15 3.49691e-07" clipDistance="300" nodeId="71" materialIds="9" castsShadows="true" receiveShadows="true">
+              <TransformGroup name="winter" translation="0 4.3201e-14 -3.49691e-07" nodeId="72">
+                <Shape shapeId="18" name="snow" translation="0 -3.52429e-14 0" clipDistance="200" nodeId="73" materialIds="14" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024"/>
+              </TransformGroup>
+            </Shape>
+            <Shape shapeId="19" name="LOD1" translation="0 -2.27374e-14 6.99382e-07" static="true" clipDistance="500" nodeId="74" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="20" name="occluderMesh" translation="0 2.27374e-15 6.99382e-07" clipDistance="250" nodeId="75" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true"/>
+          </TransformGroup>
+          <TransformGroup name="farmSilo02mid" translation="0 4 -1.59342e-09" rotation="-2.2824e-08 0 0" nodeId="76" lodDistance="0 100">
+            <Shape shapeId="21" name="LOD0" translation="0 -3.97904e-15 1.74846e-07" rotation="2.50448e-06 0 0" clipDistance="300" nodeId="77" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="22" name="LOD1" translation="0 -1.13687e-14 3.49691e-07" static="true" clipDistance="500" nodeId="78" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="23" name="occluderMesh" translation="0 1.13687e-15 3.49691e-07" clipDistance="250" nodeId="79" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true"/>
+          </TransformGroup>
+          <TransformGroup name="farmSilo02mid" translation="0 8 -3.18683e-09" rotation="-2.2824e-08 0 0" nodeId="80" lodDistance="0 100">
+            <Shape shapeId="21" name="LOD0" translation="0 -3.97904e-15 1.74846e-07" rotation="2.50448e-06 0 0" clipDistance="300" nodeId="81" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="22" name="LOD1" translation="0 -1.13687e-14 3.49691e-07" static="true" clipDistance="500" nodeId="82" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="23" name="occluderMesh" translation="0 1.13687e-15 3.49691e-07" clipDistance="250" nodeId="83" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true"/>
+          </TransformGroup>
+          <TransformGroup name="attachments" translation="-15.9039 -2.79168 23.575" nodeId="84">
+            <Shape shapeId="24" name="electricalMeterWallBox03" lockedgroup="true" translation="22.0443 3.96123 -27.575" rotation="180 0 180" clipDistance="20" nodeId="85" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="25" name="chimneyPipe02" lockedgroup="true" translation="19.9758 7.3352 -20.6127" clipDistance="90" nodeId="86" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="26" name="col" visibility="false" static="true" density="0.0001" nodeId="87" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+          </TransformGroup>
+          <Shape shapeId="27" name="extraCollision" translation="1.58362 3.41343 -2.83653" rotation="180 6.83019e-06 -180" scale="2.75 2 2.5" static="true" nodeId="88" materialIds="16" nonRenderable="true" distanceBlending="false"/>
+          <TransformGroup name="transferTower" nodeId="89">
+            <Shape shapeId="28" name="uploadGrainTower" translation="-9.80123 0 -2.14421" rotation="0 -90 0" static="true" clipDistance="930" nodeId="90" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="29" name="towerGrainOutlet01aVis" translation="-2.38544 13.7671 1.61395" rotation="52.9305 0 -90" scale="0.9 0.9 0.9" clipDistance="110" nodeId="91" materialIds="15" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="loadingStation" translation="10.3692 6.22706 -0.531843" scale="1 1.1 1" nodeId="104">
+          <TransformGroup name="loadingTriggers" nodeId="105">
+            <Shape shapeId="30" name="loadingTrigger" translation="0 1.018 0" static="true" trigger="true" collisionMask="1073741824" nodeId="106" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="dischargeNode" translation="0 -0.421 0" nodeId="107"/>
+            <TransformGroup name="dischargeEffect" translation="0 -2.83244 0.022" scale="2.8 1 3" nodeId="108">
+              <Shape shapeId="31" name="pipeEffect" translation="4.44089e-18 4.19937 0" rotation="90 0 0" scale="1.5 1.5 1.2" clipDistance="300" nodeId="109" materialIds="96" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="32" name="pipeEffectSmoke" translation="-5.31797e-15 -1.11261 -2.04636e-14" scale="0.5 1 0.5" clipDistance="100" nodeId="110" materialIds="96" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="aiLoadingNode" translation="2.39808e-16 -3.70297 0.537158" rotation="0 -90 0" nodeId="111"/>
+          </TransformGroup>
+          <TransformGroup name="Pipe" translation="-3.63311 -6.49555 -2.06221e-12" rotation="1.81903e-11 -0 1.18198e-08" clipDistance="600" nodeId="112">
+            <Shape shapeId="33" name="stuetze" static="true" clipDistance="200" nodeId="113" materialIds="94" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="34" name="exhaust" static="true" clipDistance="200" nodeId="114" materialIds="94" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="35" name="pipe" static="true" clipDistance="200" nodeId="115" materialIds="95" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

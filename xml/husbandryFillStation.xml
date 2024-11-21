@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="buyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/1.5.0.0/placeable.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="xml/fieldworkFillStation.xml">
+        <attributes>
+            <!-- update storedata -->
+            <set path="placeable.storeData.name" value="$l10n_shopItem_husbandryFillStation"/>
+            <set path="placeable.storeData.image" value="icons/store_fieldworkFillStation_brown.png"/>
+
+            <!-- update to use the husbandry fill types -->
+            <set path="placeable.buyingStation.loadTrigger#fillTypes" value="WHEAT OATS GRASS_WINDROW DRYGRASS_WINDROW STRAW PIGFOOD FORAGE_MIXING MINERAL_FOOD WATER" />
+
+            <!-- update to fill types to match the new ones -->
+            <set path="placeable.buyingStation.fillType(0)#name" value="WHEAT" />
+            <set path="placeable.buyingStation.fillType(1)#name" value="OATS" />
+            <set path="placeable.buyingStation.fillType(2)#name" value="GRASS_WINDROW" />
+            <set path="placeable.buyingStation.fillType(3)#name" value="DRYGRASS_WINDROW" />
+            <set path="placeable.buyingStation.fillType(4)#name" value="STRAW" />
+            <set path="placeable.buyingStation.fillType(5)#name" value="PIGFOOD" />
+            <set path="placeable.buyingStation.fillType(6)#name" value="FORAGE_MIXING" />
+            <set path="placeable.buyingStation.fillType(7)#name" value="MINERAL_FOOD" />
+
+            <!-- set the default color to match -->
+            <set path="placeable.colorConfigurations.colorConfiguration(0)#isDefault" value="false" />
+            <set path="placeable.colorConfigurations.colorConfiguration(30)#isDefault" value="true" />
+
+            <!-- 
+            0 <colorConfiguration color="GMNG_BLACK1" isDefault="true" />
+            1 <colorConfiguration color="GMNG_BLACK2" />
+            2 <colorConfiguration color="RUDOLFHOERMANN_DARKGREY" />
+            3 <colorConfiguration color="RUDOLFHOERMANN_GREYALU" />
+            4 <colorConfiguration color="SHARED_GREY3" />
+            5 <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREY" />
+            6 <colorConfiguration color="SHARED_WHITE2" />
+            7 <colorConfiguration color="RUDOLFHOERMANN_OXIDRED" />
+            8 <colorConfiguration color="CASEIH_RED1" />
+            9 <colorConfiguration color="RUDOLFHOERMANN_RED" />
+            10 <colorConfiguration color="INTERNATIONAL_RED1" />
+            11 <colorConfiguration color="SCHWARZMUELLER_ORANGE1" />
+            12 <colorConfiguration color="TATRA_ORANGE2" />
+            13 <colorConfiguration color="STIHL_ORANGE_1" />
+            14 <colorConfiguration color="SCHUITEMAKER_ORANGE1" />
+            15 <colorConfiguration color="SCHWARZMUELLER_YELLOW1" />
+            16 <colorConfiguration color="SHARED_YELLOW1" />
+            17 <colorConfiguration color="RUDOLFHOERMANN_GREEN" />
+            18 <colorConfiguration color="LIZARD_OLIVE1"/>
+            19 <colorConfiguration color="JOHNDEERE_GREEN1" />
+            20 <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREEN" />
+            21 <colorConfiguration color="RUDOLFHOERMANN_BLUE" />
+            22 <colorConfiguration color="SHARED_BLUE1"/>
+            23 <colorConfiguration color="NEWHOLLAND_BLUE1"/>
+            24 <colorConfiguration color="LIZARD_BLUE1"/>
+            25 <colorConfiguration color="LIZARD_PINK1" />
+            26 <colorConfiguration color="LIZARD_PURPLE1" />
+            27 <colorConfiguration color="RUDOLFHOERMANN_BEIGE" />
+            28 <colorConfiguration color="RUDOLFHOERMANN_DARKBEIGE" />
+            29 <colorConfiguration color="SHARED_BROWN1" />
+            30 <colorConfiguration color="RUDOLFHOERMANN_BROWN" />
+            -->
+            
+        </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>$l10n_shopItem_husbandryFillStationFree</name>
+        <image>icons/store_husbandryFillStation.dds</image>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+    </storeData>
+</placeable>

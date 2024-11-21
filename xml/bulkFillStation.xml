@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="buyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/1.5.0.0/placeable.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="xml/fieldworkFillStation.xml">
+        <attributes>
+            <!-- update storedata -->
+            <set path="placeable.storeData.name" value="$l10n_shopItem_bulkFillStation"/>
+            <set path="placeable.storeData.image" value="icons/store_fieldworkFillStation_greyAlu.png"/>
+
+            <!-- update to use the husbandry fill types -->
+            <remove path="placeable.buyingStation.loadTrigger#fillTypes" />
+            <set path="placeable.buyingStation.loadTrigger#fillTypeCategories" value="BULK"  />
+
+            <!-- update to fill types to match the new ones -->
+            <remove path="placeable.buyingStation.fillType(0)" />
+            <remove path="placeable.buyingStation.fillType(1)" />
+            <remove path="placeable.buyingStation.fillType(2)" />
+            <remove path="placeable.buyingStation.fillType(3)" />
+            <remove path="placeable.buyingStation.fillType(4)" />
+            <remove path="placeable.buyingStation.fillType(5)" />
+            <remove path="placeable.buyingStation.fillType(6)" />
+            <remove path="placeable.buyingStation.fillType(7)" />
+            <set path="placeable.buyingStation.fillTypeCategory(0)#name" value="BULK" />
+            <set path="placeable.buyingStation.fillTypeCategory(0)#priceScale" value="0.7" />
+
+            <!-- set the default color to match -->
+            <set path="placeable.colorConfigurations.colorConfiguration(0)#isDefault" value="false" />
+            <set path="placeable.colorConfigurations.colorConfiguration(3)#isDefault" value="true" />
+            
+        </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>$l10n_shopItem_bulkFillStation</name>
+        <image>icons/store_fieldworkFillStation_greyAlu.dds</image>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+    </storeData>
+</placeable>
