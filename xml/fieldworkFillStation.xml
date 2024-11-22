@@ -196,6 +196,7 @@
         <i3dMapping id="unloadStationAINode" node="0>8|2" />
         <i3dMapping id="markerUnloading" node="0>8|3" />  
         <i3dMapping id="unloadVisualLinkNode" node="0>8|4" />
+        <i3dMapping id="unloadBaleTrigger" node="0>8|5" />
         
     </i3dMappings>
 </placeable>

@@ -31,6 +31,10 @@
             <set path="placeable.buyingStation.fillType(6)#priceScale" value="0" />
             <set path="placeable.buyingStation.fillType(7)#priceScale" value="0" />
             <set path="placeable.buyingStation.fillType(8)#priceScale" value="0" />
+
+            <!-- selling station update to match new products  -->            
+            <set path="placeable.sellingStation.unloadTrigger#fillTypes" value="WHEAT OATS GRASS_WINDROW DRYGRASS_WINDROW STRAW PIGFOOD FORAGE FORAGE_MIXING MINERAL_FOOD WATER" />
+            <set path="placeable.sellingStation.palletTrigger#fillTypes" value="WHEAT OATS PIGFOOD FORAGE_MIXING MINERAL_FOOD" />
         
             <!-- set the default color to match -->
             <set path="placeable.colorConfigurations.colorConfiguration(0)#isDefault" value="false" />
