@@ -1,67 +1,57 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <modDesc descVersion="92">
     <author>GMNGjoy</author>
-    <version>1.0.0.0</version>
-
+    <version>0.9.0.29</version>
     <title>
         <en>Farm Fill Stations</en>
         <fr>Station De Remplissage De Travail Sur Le Terrain</fr>
         <de>Feldarbeit-Füllstation</de>
     </title>
-
     <description>
         <en><![CDATA[Fill Stations for all of your farm & fieldwork needs!
 
-Five versions available:
-- Fieldwork Fill Station - Selling Station with a 30% discount for buying bulk
-- Free Fieldwork Fill Station - free Free FREE! Get all available fill types for free!
-- Fieldwork Fill Station Silo - On your farm Silo supporting all the same products!
-- Husbandry Fill Station - Selling Station for all your animal feeding needs, same 30% discount.
-- Free Husbandry Fill Station - free Free FREE! All your animal feeding needs for free!
+Four different types are available:
 
-Fieldwork Fill station comes in two styles:
-- Default (Signature black style)
-- Old (Rusty but works just as good)
+"Fieldwork" for all your field work needs
+- Fill Types: Seeds, Fertilizer, Lime, Liquid Fertilizer, Herbicide, Silage Additive, Manure, Slurry, Digestate, Free Water 
 
-Fieldwork Fill Types:
-- Seeds
-- Fertilizer
-- Lime
-- Liquid Fertilizer
-- Herbicide
-- Silage Additive
-- Manure
-- Slurry
-- Digestate
-- Water
+"Husbandry" for all your animal feeding needs
+- Fill Types: Wheat (Chickens), Oats (Horses), Pig Food (Pigs), Grass & Hay (Sheep, Cows), Total Mixed Ration (Cows), Mineral Food (Cows), Silage (Cows), Straw (Cows, Horses, Pigs), Free Water
 
-Husbandry Fill Types:
-- Wheat (Chickens)
-- Oats (Horses)
-- Pig Food (Pigs)
-- Grass & Hay (Sheep, Cows)
-- Total Mixed Ration (Cows)
-- Mineral Food (Cows)
-- Silage (Cows)
-- Straw (Cows, Horses, Pigs)
-- Water (All)
+"Liquid" for all your liquid and gaseous supplies
+- Fill Types: Milk, Buffalo Milk, Liquid Fertilizer, Herbicide, Silage Additive, Slurry, Digestate, Free Water 
 
-Price: 15,000 $  (14,000 $ for Old version)
-Daily Upkeep: 2 $
+"Bulk" for everything else that can be loaded bulk into a trailer
 
-Changelog v1.2.0.0
-- Added Husbandry Versions - All your animal feeding needs in one place
+Three Styles are available:
 
-Changelog v1.1.0.0
-- Added Silo version (does not support discount)
-- Added "Old" (Rusty) style in all three versions
+Fieldwork Fill Station
+Detail: 30% discount when buying all products, 30% bonus when selling!
+Category: Containers
+Price: $5,000
+Monthly upkeep: $9
+Configurations: Visual (Colorable w/ 37 options | Rusty but trusty, Dark Rusted)
 
-Changelog v1.0.0.1
-- Added Manure, Slurry, Digestate &amp; Water
-- Increased fill rates for all products
-- Increased discount
+Free Fieldwork Fill Station
+Detail: Free Free FREE when buying, 30% bonus when selling!
+Category: Containers
+Price: $5,000
+Monthly upkeep: $9
+Configurations: Visual (Colorable w/ 37 options | Rusty but trusty, Dark Rusted)
+
+Fieldwork Fill Station Silo
+Detail: Standard silo with the ability to fill any containing product!
+Category: Silos
+Price: $10,000
+Monthly upkeep: $9
+Configurations: Visual (Colorable w/ 37 options | Rusty but trusty, Dark Rusted)
+
+... incliding alternate versions of each of the
+
+For license & feedback, please visit
+GitHub link: https://github.com/GMNGjoy/FS25_IndustrialSawmill
 ]]></en>
-    <fr><![CDATA[Chargez vos outils pour tous vos besoins de travail sur le terrain!
+        <fr><![CDATA[Chargez vos outils pour tous vos besoins de travail sur le terrain!
 
 Trois versions disponibles :
 - Station de remplissage de terrain - Station de vente avec une remise de 30 % pour l'achat en gros
@@ -96,7 +86,7 @@ Changelog v1.0.0.1
 - Augmentation des taux de remplissage pour tous les produits
 - Rabais majoré
 ]]></fr>
-    <de><![CDATA[Befülle hier die Geräte, die Du für die Feldarbeit benötigst!
+        <de><![CDATA[Befülle hier die Geräte, die Du für die Feldarbeit benötigst!
 
 Drei Versionen verfügbar:
 - Fieldwork Fill Station – Verkaufsstation mit 30 % Rabatt beim Kauf großer Mengen
@@ -132,37 +122,36 @@ Changelog v1.0.0.1
 - Erhöhter Rabatt
 ]]></de>
     </description>
-
-    <iconFilename>icon_FarmFillStations.dds</iconFilename>
-
-    <multiplayer supported="true" />
-
+    <iconFilename>icon_farmFillStations.dds</iconFilename>
+    <multiplayer supported="true"/>
     <storeItems>
-        <storeItem xmlFilename="xml/fieldworkFillStation.xml" />
-        <storeItem xmlFilename="xml/fieldworkFillStationFree.xml" />
-        <storeItem xmlFilename="xml/fieldworkFillStationSilo.xml" />
-        <storeItem xmlFilename="xml/husbandryFillStation.xml" />
-        <storeItem xmlFilename="xml/husbandryFillStationFree.xml" />
-        <storeItem xmlFilename="xml/liquidFillStation.xml" />
-        <!-- <storeItem xmlFilename="xml/liquidFillStationFree.xml" /> -->
-        <storeItem xmlFilename="xml/bulkFillStation.xml" />
-        <!-- <storeItem xmlFilename="xml/bulkFillStationFree.xml" /> -->
+        <storeItem xmlFilename="xml/fieldworkFillStation.xml"/>
+        <storeItem xmlFilename="xml/fieldworkFillStationFree.xml"/>
+        <storeItem xmlFilename="xml/fieldworkFillStationSilo.xml"/>
+        <storeItem xmlFilename="xml/husbandryFillStation.xml"/>
+        <storeItem xmlFilename="xml/husbandryFillStationFree.xml"/>
+        <storeItem xmlFilename="xml/husbandryFillStationSilo.xml"/>
+        <storeItem xmlFilename="xml/liquidFillStation.xml"/>
+        <storeItem xmlFilename="xml/liquidFillStationFree.xml"/>
+        <storeItem xmlFilename="xml/liquidFillStationSilo.xml"/>
+        <storeItem xmlFilename="xml/bulkFillStation.xml"/>
+        <storeItem xmlFilename="xml/bulkFillStationFree.xml"/>
+        <storeItem xmlFilename="xml/bulkFillStationSilo.xml"/>
     </storeItems>
-
+    <fillTypes filename="xml/map_fillTypes.xml"/>
     <materialTemplates>
-        <template name="GMNG_BLACK1" brand="GMNG" title="$l10n_binColor_black1" colorScale="0.015 0.015 0.015" />
-        <template name="GMNG_BLACK2" brand="GMNG" title="$l10n_binColor_black1" colorScale="0.035 0.035 0.035" />
+        <template name="GMNG_HELLAOLDBLACK" title="$l10n_color_hellaOldBlack" colorScale="0.000 0.000 0.000" parentTemplate="metalPaintedOld"/>
+        <template name="GMNG_BLACK1" title="$l10n_binColor_black1" colorScale="0.015 0.015 0.015" parentTemplate="calibratedPaint"/>
+        <template name="GMNG_BLACK2" title="$l10n_binColor_black2" colorScale="0.035 0.035 0.035" parentTemplate="calibratedPaint"/>
     </materialTemplates>
-
     <placeableTypes>
-		<type name="buyingStationConfigurable" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua">
-            <specialization name="buyingStation" />
-            <specialization name="sellingStation" />
+        <type name="buyingStationConfigurable" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="buyingStation"/>
+            <specialization name="sellingStation"/>
         </type>
         <type name="siloConfigurable" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua">
-            <specialization name="silo" />
+            <specialization name="silo"/>
         </type>
-	</placeableTypes>
-
-    <l10n filenamePrefix="languages/l10n" />
+    </placeableTypes>
+    <l10n filenamePrefix="languages/l10n"/>
 </modDesc>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="buyingStationConfigurable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/1.5.0.0/placeable.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="xml/fieldworkFillStationSilo.xml">
+        <attributes>
+            <!-- update storedata -->
+            <set path="placeable.storeData.name" value="$l10n_shopItemliquidFillStationSilo"/>
+            <set path="placeable.storeData.function(0)" value="$l10n_shopItem_liquidFillStationSilo"/>
+            <set path="placeable.storeData.price" value="10000"/>
+            <set path="placeable.storeData.image" value="icons/store_fieldworkFillStation_blue1.png"/>
+
+            <!-- update to fill types to match the new ones -->
+            <set path="placeable.silo.loadingStation.loadTrigger#fillTypeCategories" value="FILLSTATION_LIQUIDS" />
+            <set path="placeable.silo.unloadingStation.unloadTrigger#fillTypeCategories" value="FILLSTATION_LIQUIDS" />
+            <set path="placeable.silo.unloadingStation.palletTrigger#fillTypeCategories" value="FILLSTATION_LIQUIDS" />
+            <set path="placeable.silo.storages.storage#fillTypeCategories" value="FILLSTATION_LIQUIDS" />
+
+            <!-- set the default color to match -->
+            <set path="placeable.colorConfigurations.colorConfiguration(4)#isDefault" value="false" />
+            <set path="placeable.colorConfigurations.colorConfiguration(25)#isDefault" value="true" />
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>$l10n_shopItem_liquidFillStationFree</name>
+        <image>icons/store_fieldworkFillStatio_blue1.dds</image>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+    </storeData>
+</placeable>

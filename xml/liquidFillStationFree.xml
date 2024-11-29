@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="buyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/1.5.0.0/placeable.xsd">
+<placeable type="buyingStationConfigurable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/1.5.0.0/placeable.xsd">
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
-    <parentFile xmlFilename="xml/fieldworkFillStation.xml">
+    <parentFile xmlFilename="xml/liquidFillStation.xml">
         <attributes>
             <!-- update storedata -->
-            <set path="placeable.storeData.name" value="$l10n_shopItem_fieldworkFillStationFree"/>
-            <set path="placeable.storeData.price" value="15000"/>
-            <set path="placeable.storeData.image" value="icons/store_fieldworkFillStation_black2.png"/>
+            <set path="placeable.storeData.name" value="$l10n_shopItem_liquidFillStationFree"/>
+            <set path="placeable.storeData.image" value="icons/store_fieldworkFillStation_blue2.png"/>
 
-            <!-- update to be an free for all fill types -->
+            <!-- update to fill types to match the new ones -->
             <set path="placeable.buyingStation.fillType(0)#priceScale" value="0" />
             <set path="placeable.buyingStation.fillType(1)#priceScale" value="0" />
             <set path="placeable.buyingStation.fillType(2)#priceScale" value="0" />
@@ -21,16 +20,16 @@
             <set path="placeable.buyingStation.fillType(8)#priceScale" value="0" />
 
             <!-- set the default color to match -->
-            <set path="placeable.colorConfigurations.colorConfiguration(1)#isDefault" value="false" />
-            <set path="placeable.colorConfigurations.colorConfiguration(2)#isDefault" value="true" />
-
-         </attributes>
+            <set path="placeable.colorConfigurations.colorConfiguration(22)#isDefault" value="false" />
+            <set path="placeable.colorConfigurations.colorConfiguration(23)#isDefault" value="true" />
+            
+        </attributes>
     </parentFile>
 
     <!-- ONLY FOR ICON GENERATION -->
     <storeData>
-        <name>$l10n_shopItem_fieldworkFillStationFree</name>
-        <image>icons/store_fieldworkFillStation.dds</image>
+        <name>$l10n_shopItem_liquidFillStationFree</name>
+        <image>icons/store_fieldworkFillStation_blue2.dds</image>
         <brand>LIZARD</brand>
         <species>placeable</species>
         <category>placeableMisc</category>

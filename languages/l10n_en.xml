@@ -10,26 +10,32 @@
 
         <text name="shopItem_husbandryFillStation" text="Husbandry Fill Station" />
         <text name="shopItem_husbandryFillStationFree" text="Free Husbandry Fill Station" />
+        <text name="shopItem_husbandryFillStationSilo" text="Husbandry Fill Station Silo" />
         <text name="function_husbandryFillStation" text="Feed your animals without the hassle of farming, 30% discount for buying bulk!" />
+        <text name="function_husbandryFillStationSilo" text="Silo for your farm to store all of your husbandry supplies." />
         
         <text name="shopItem_bulkFillStation" text="Bulk Fill Station" />
         <text name="shopItem_bulkFillStationFree" text="Free Bulk Fill Station" />
-        <text name="shopItem_bulkFillStationSilo" text="Free Bulk Fill Station" />
+        <text name="shopItem_bulkFillStationSilo" text="Bulk Fill Station Silo" />
         <text name="function_bulkFillStation" text="A bit short? Buy any bulk product at a 30% discount!" />
+        <text name="function_bulkFillStationSilo" text="Silo for your farm to store all of your bulk supplies." />
         
         <text name="shopItem_liquidFillStation" text="Liquid Fill Station" />
-        <text name="shopItem_liquidFillStationFree" text="Free Liduid Fill Station" />
+        <text name="shopItem_liquidFillStationFree" text="Free Liquid Fill Station" />
         <text name="shopItem_liquidFillStationSilo" text="Liquid Fill Station Silo" />
         <text name="function_liquidFillStation" text="Fill your tank or tanker, 30% discount for buying bulk!" />
+        <text name="function_liquidFillStationSilo" text="Silo for your farm to store all of your liquid supplies." />
         
         <text name="function_oldButStillGood" text="It may be a bit rusty, but always trusty." />
         <text name="function_alsoSellStation" text="Bought a bit too much? Sell it back right away!" />
         
         <text name="configuration_patina" text="Patina" />
-        <text name="patina_light" text="Light Patina" />
-        <text name="patina_dark" text="Dark Patina" />
+        <text name="patina_light" text="Rusty but trusty" />
+        <text name="patina_dark" text="Dark &amp; Rusty" />
         
-        <text name="binColor_black1" text="Old Black" />
-        <text name="binColor_black2" text="Ultra Black" />
+        <text name="binColor_black1" text="Blackest Black" />
+        <text name="binColor_black2" text="Somewhat Black" />
+        <text name="color_hellaBlack" text="Hella Black, Yo!" />
+        <text name="color_hellaOldBlack" text="Hella Old Black" />
     </texts>
 </l10n>

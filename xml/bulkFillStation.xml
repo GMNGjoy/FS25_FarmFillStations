@@ -1,42 +1,269 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="buyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/1.5.0.0/placeable.xsd">
-    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
-
-    <parentFile xmlFilename="xml/fieldworkFillStation.xml">
-        <attributes>
-            <!-- update storedata -->
-            <set path="placeable.storeData.name" value="$l10n_shopItem_bulkFillStation"/>
-            <set path="placeable.storeData.image" value="icons/store_fieldworkFillStation_greyAlu.png"/>
-
-            <!-- update to use the husbandry fill types -->
-            <remove path="placeable.buyingStation.loadTrigger#fillTypes" />
-            <set path="placeable.buyingStation.loadTrigger#fillTypeCategories" value="BULK"  />
-
-            <!-- update to fill types to match the new ones -->
-            <remove path="placeable.buyingStation.fillType(0)" />
-            <remove path="placeable.buyingStation.fillType(1)" />
-            <remove path="placeable.buyingStation.fillType(2)" />
-            <remove path="placeable.buyingStation.fillType(3)" />
-            <remove path="placeable.buyingStation.fillType(4)" />
-            <remove path="placeable.buyingStation.fillType(5)" />
-            <remove path="placeable.buyingStation.fillType(6)" />
-            <remove path="placeable.buyingStation.fillType(7)" />
-            <set path="placeable.buyingStation.fillTypeCategory(0)#name" value="BULK" />
-            <set path="placeable.buyingStation.fillTypeCategory(0)#priceScale" value="0.7" />
-
-            <!-- set the default color to match -->
-            <set path="placeable.colorConfigurations.colorConfiguration(0)#isDefault" value="false" />
-            <set path="placeable.colorConfigurations.colorConfiguration(3)#isDefault" value="true" />
-            
-        </attributes>
-    </parentFile>
-
-    <!-- ONLY FOR ICON GENERATION -->
+<placeable type="buyingStationConfigurable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/placeable.xsd">
     <storeData>
         <name>$l10n_shopItem_bulkFillStation</name>
-        <image>icons/store_fieldworkFillStation_greyAlu.dds</image>
+        <functions>
+            <function>$l10n_function_bulkFillStation</function>
+            <function>$l10n_function_alsoSellStation</function>
+        </functions>
+        <image>icons/store_fieldworkFillStation_rudyGreen.png</image>
+        <price>5000</price>
+        <dailyUpkeep>2</dailyUpkeep>
+        <lifetime>100</lifetime>
+        <rotation>180</rotation>
         <brand>LIZARD</brand>
-        <species>placeable</species>
+        <species>PLACEABLE</species>
         <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>containers</tab>
+        </brush>
+        <storeIconRendering>
+            <settings cameraYRot="22" cameraXRot="-5" showTriggerMarkers="false"/>
+        </storeIconRendering>
     </storeData>
+
+    <base>
+        <filename>i3d/fillStation.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas />
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="i3d/warningStripesUnloading.i3d" node="0" linkNode="stripesLinkNode" />
+    </dynamicallyLoadedParts>
+
+    <buyingStation node="buyingStation" supportsExtension="false">
+        <loadTrigger triggerNode="loadingTrigger" fillTypeCategories="FILLSTATION_BULK" fillLitersPerSecond="4000" infiniteCapacity="true" aiNode="aiNodeLoading">
+            <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" shapeScaleSpread="0.8 0.8 1 0" controlPoint="3 0 0 0"/>
+            <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+        </loadTrigger>
+        
+        <fillType priceScale="0.7" name="WHEAT" />
+        <fillType priceScale="0.7" name="BARLEY" />
+        <fillType priceScale="0.7" name="OAT" />
+        <fillType priceScale="0.7" name="CANOLA" />
+        <fillType priceScale="0.7" name="SORGHUM" />
+        <fillType priceScale="0.7" name="SUNFLOWER" />
+        <fillType priceScale="0.7" name="SOYBEAN" />
+        <fillType priceScale="0.7" name="MAIZE" />
+        <fillType priceScale="0.7" name="POTATO" />
+        <fillType priceScale="0.7" name="SUGARBEET" />
+        <fillType priceScale="0.7" name="BEETROOT" />
+        <fillType priceScale="0.7" name="CARROT" />
+        <fillType priceScale="0.7" name="PARSNIP" />
+        <fillType priceScale="0.7" name="RICE" />
+        <fillType priceScale="0.7" name="RICELONGGRAIN" />
+        <fillType priceScale="0.7" name="GREENBEAN" />
+        <fillType priceScale="0.7" name="PEA" />
+        <fillType priceScale="0.7" name="SPINACH" />
+        <fillType priceScale="0.7" name="OLIVE" />
+        <fillType priceScale="0.7" name="SUGARCANE" />
+        <fillType priceScale="0.7" name="WOODCHIPS" />
+        <fillType priceScale="0.7" name="SUGARBEET_CUT" />
+        <fillType priceScale="0.7" name="SILAGE" />
+        <fillType priceScale="0.7" name="GRASS_WINDROW" />
+        <fillType priceScale="0.7" name="DRYGRASS_WINDROW" />
+        <fillType priceScale="0.7" name="STRAW" />
+        <fillType priceScale="0.7" name="CHAFF" />
+        <fillType priceScale="0.7" name="FORAGE" />
+        <fillType priceScale="0.7" name="FORAGE_MIXING" />
+        <fillType priceScale="0.7" name="PIGFOOD" />
+        <fillType priceScale="0.7" name="MINERAL_FEED" />
+        <fillType priceScale="0.7" name="SEEDS" />
+        <fillType priceScale="0.7" name="FERTILIZER" />
+        <fillType priceScale="0.7" name="LIME" />
+        <fillType priceScale="0.7" name="MANURE" />
+        <fillType priceScale="0.7" name="STONE" />
+        <fillType priceScale="0" name="WATER" />
+    </buyingStation>
+
+    <sellingStation appearsOnStats="false" litersForFullPriceDrop="1000000" fullPriceRecoverHours="24" supportsExtension="false">
+        <unloadTrigger fillTypeCategories="FILLSTATION_BULK" priceScale="1.3" exactFillRootNode="unloadBulkTrigger" aiNode="unloadStationAINode" />
+        <palletTrigger fillTypeCategories="FILLSTATION_BULK" priceScale="1.3" triggerNode="unloadPalletTrigger" />
+        <baleTrigger fillTypeCategories="FILLSTATION_BULK" priceScale="1.3" triggerNode="unloadBaleTrigger" />
+        <fillType priceScale="1.3" name="WHEAT" />
+        <fillType priceScale="1.3" name="BARLEY" />
+        <fillType priceScale="1.3" name="OAT" />
+        <fillType priceScale="1.3" name="CANOLA" />
+        <fillType priceScale="1.3" name="SORGHUM" />
+        <fillType priceScale="1.3" name="SUNFLOWER" />
+        <fillType priceScale="1.3" name="SOYBEAN" />
+        <fillType priceScale="1.3" name="MAIZE" />
+        <fillType priceScale="1.3" name="POTATO" />
+        <fillType priceScale="1.3" name="SUGARBEET" />
+        <fillType priceScale="1.3" name="BEETROOT" />
+        <fillType priceScale="1.3" name="CARROT" />
+        <fillType priceScale="1.3" name="PARSNIP" />
+        <fillType priceScale="1.3" name="RICE" />
+        <fillType priceScale="1.3" name="RICELONGGRAIN" />
+        <fillType priceScale="1.3" name="GREENBEAN" />
+        <fillType priceScale="1.3" name="PEA" />
+        <fillType priceScale="1.3" name="SPINACH" />
+        <fillType priceScale="1.3" name="OLIVE" />
+        <fillType priceScale="1.3" name="SUGARCANE" />
+        <fillType priceScale="1.3" name="WOODCHIPS" />
+        <fillType priceScale="1.3" name="SUGARBEET_CUT" />
+        <fillType priceScale="1.3" name="SILAGE" />
+        <fillType priceScale="1.3" name="GRASS_WINDROW" />
+        <fillType priceScale="1.3" name="DRYGRASS_WINDROW" />
+        <fillType priceScale="2.0" name="STRAW" />
+        <fillType priceScale="1.3" name="CHAFF" />
+        <fillType priceScale="1.3" name="FORAGE" />
+        <fillType priceScale="1.3" name="FORAGE_MIXING" />
+        <fillType priceScale="1.3" name="PIGFOOD" />
+        <fillType priceScale="1.3" name="MINERAL_FEED" />
+        <fillType priceScale="1.3" name="SEEDS" />
+        <fillType priceScale="1.3" name="FERTILIZER" />
+        <fillType priceScale="1.3" name="LIME" />
+        <fillType priceScale="10.0" name="MANURE" />
+        <fillType priceScale="1.3" name="STONE" />
+        <fillType priceScale="1.3" name="WATER" />
+    </sellingStation>
+
+    <hotspots>
+        <hotspot type="LOADING" linkNode="mapPosition" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="markerLoading" filename="$data/shared/assets/marker/markerIconLoad.i3d" adjustToGround="true" />
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+        <triggerMarker node="stripesLinkNode" adjustToGround="true" />
+    </triggerMarkers>
+
+    <!-- leverage the solar panels customization to provide patina -->
+    <solarPanels>
+        <solarPanelsConfigurations title="$l10n_configuration_patina">
+            <solarPanelsConfiguration name="$l10n_configuration_valueDefault" isActive="true" price="0" incomePerHour="0">
+                <objectChange node="binColorable" visibilityActive="true" />
+                <objectChange node="binRustyLight" visibilityActive="false"/>
+                <objectChange node="binRustyDark" visibilityActive="false"/>
+            </solarPanelsConfiguration>
+            <solarPanelsConfiguration name="$l10n_patina_light" isActive="false" price="0" incomePerHour="0">
+                <objectChange node="binRustyLight" visibilityActive="true"/>
+                <objectChange node="binRustyDark" visibilityActive="false"/>
+                <objectChange node="binColorable" visibilityActive="false"/>
+            </solarPanelsConfiguration>
+            <solarPanelsConfiguration name="$l10n_patina_dark" isActive="false" price="0" incomePerHour="0">
+                <objectChange node="binRustyLight" visibilityActive="false"/>
+                <objectChange node="binRustyDark" visibilityActive="true"/>
+                <objectChange node="binColorable" visibilityActive="false"/>
+            </solarPanelsConfiguration>
+        </solarPanelsConfigurations>
+    </solarPanels>
+
+    <colorConfigurations useDefaultColors="false" postLoadObjectChange="false" price="0">
+        <colorConfiguration color="GMNG_HELLAOLDBLACK" />
+        <colorConfiguration color="GMNG_BLACK1" />
+        <colorConfiguration color="GMNG_BLACK2" />
+        <colorConfiguration color="RUDOLFHOERMANN_DARKGREY" />
+        <colorConfiguration color="RUDOLFHOERMANN_GREYALU" />
+        <colorConfiguration color="SHARED_GREY3" />
+        <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREY" />
+        <colorConfiguration color="SHARED_WHITE2" />
+        <colorConfiguration color="RUDOLFHOERMANN_OXIDRED" />
+        <colorConfiguration color="CASEIH_RED1" />
+        <colorConfiguration color="RUDOLFHOERMANN_RED" />
+        <colorConfiguration color="INTERNATIONAL_RED1" />
+        <colorConfiguration color="SCHWARZMUELLER_ORANGE1" />
+        <colorConfiguration color="TATRA_ORANGE2" />
+        <colorConfiguration color="STIHL_ORANGE_1" />
+        <colorConfiguration color="SCHUITEMAKER_ORANGE1" />
+        <colorConfiguration color="SCHWARZMUELLER_YELLOW1" />
+        <colorConfiguration color="SHARED_YELLOW1" />
+        <colorConfiguration color="RUDOLFHOERMANN_GREEN" isDefault="true" />
+        <colorConfiguration color="LIZARD_OLIVE1"  />
+        <colorConfiguration color="JOHNDEERE_GREEN1" />
+        <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREEN" />
+        <colorConfiguration color="RUDOLFHOERMANN_BLUE" />
+        <colorConfiguration color="SHARED_BLUE1"/>
+        <colorConfiguration color="NEWHOLLAND_BLUE1"/>
+        <colorConfiguration color="LIZARD_BLUE1"/>
+        <colorConfiguration color="LIZARD_PINK1" />
+        <colorConfiguration color="LIZARD_PURPLE1" />
+        <colorConfiguration color="RUDOLFHOERMANN_BEIGE" />
+        <colorConfiguration color="RUDOLFHOERMANN_DARKBEIGE" />
+        <colorConfiguration color="JOHNDEERE_BROWN1" />
+        <colorConfiguration color="SHARED_BROWN1" />
+        <colorConfiguration color="RUDOLFHOERMANN_BROWN" />
+        <material slotName="grainBinColorable" />
+        <node node="binColorableBody" />
+        <!-- <node node="binColorableNeck" /> -->
+    </colorConfigurations>
+
+    <i3dMappings>
+        <i3dMapping id="binLinkNode" node="0>0" />
+        <i3dMapping id="binColorable" node="0>0|0" />  
+        <i3dMapping id="binColorableBody" node="0>0|0|1" />  
+        <!-- <i3dMapping id="binColorableNeck" node="0>0|0|8" />   -->
+        <i3dMapping id="binRustyLight" node="0>0|1" />
+        <i3dMapping id="binRustyDark" node="0>0|2" />
+
+        <i3dMapping id="clearArea1Start" node="0>1|0" />
+        <i3dMapping id="clearArea1Width" node="0>1|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>1|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>2|0" />
+        <i3dMapping id="levelArea1Width" node="0>2|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>2|0|1" />
+        <i3dMapping id="testArea1Start" node="0>3|0" />
+        <i3dMapping id="testArea1End" node="0>3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>4|0|0" />
+        
+        <i3dMapping id="collision" node="0>5|0" />
+        <i3dMapping id="tipCollision" node="0>5|1" />
+
+        <i3dMapping id="mapPosition" node="0>6|0" />
+        <i3dMapping id="playerTrigger" node="0>6|1" />
+        <i3dMapping id="playerTriggerMarker" node="0>6|1|0" />
+        <i3dMapping id="refillPlayerTrigger" node="0>6|1" />
+        <i3dMapping id="playerTriggerMarker" node="0>6|1|0" />
+
+        <!-- buying station -->
+        <i3dMapping id="buyingStation" node="0>7" />        
+        <i3dMapping id="pipeEffect" node="0>7|0|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>7|0|1" />
+        <i3dMapping id="dischargeNode" node="0>7|1" />
+        <i3dMapping id="loadingTrigger" node="0>7|2" />
+        <i3dMapping id="aiNodeLoading" node="0>7|3" />
+        <i3dMapping id="markerLoading" node="0>7|4" />
+
+        <!-- selling station -->
+        <i3dMapping id="sellingStation" node="0>8" />
+        <i3dMapping id="unloadBulkTrigger" node="0>8|0" />
+        <i3dMapping id="unloadPalletTrigger" node="0>8|1" />
+        <i3dMapping id="unloadBaleTrigger" node="0>8|2" />
+        <i3dMapping id="unloadStationAINode" node="0>8|3" />
+        <i3dMapping id="markerUnloading" node="0>8|4" />  
+        <i3dMapping id="stripesLinkNode" node="0>8|5" />
+        <i3dMapping id="grateLinkNode" node="0>8|6" />
+        
+    </i3dMappings>
 </placeable>

@@ -5,26 +5,21 @@
         <functions>
             <function>$l10n_function_fieldworkFillStationSilo</function>
         </functions>
-        <image>icons/store_fieldworkFillStation_greyalu.png</image>
-        <price>15000</price>
+        <image>icons/store_fieldworkFillStation_greyAlu.png</image>
+        <price>10000</price>
         <dailyUpkeep>2</dailyUpkeep>
         <lifetime>100</lifetime>
         <rotation>0</rotation>
         <brand>LIZARD</brand>
         <species>PLACEABLE</species>
-        <category>fillableTanks</category>
+        <category>silos</category>
         <brush>
             <type>placeable</type>
             <category>buildings</category>
-            <tab>containers</tab>
+            <tab>silos</tab>
         </brush>
         <storeIconRendering>
             <settings cameraYRot="22" cameraXRot="-5" showTriggerMarkers="false"/>
-            <!-- <objectBundle>
-                <object filename="fillStation.i3d">
-                    <node node="0>" translation="-12 0 24" rotation="0 0 0" scale="2 2 2"/>
-                </object>
-            </objectBundle> -->
         </storeIconRendering>
     </storeData>
 
@@ -61,24 +56,24 @@
     </tipOcclusionUpdateAreas>
 
     <dynamicallyLoadedParts>
-        <dynamicallyLoadedPart filename="$data/placeables/shared/sellingStationGeneric/sellingStationGenericSmall.i3d" node="0" linkNode="unloadVisualLinkNode" />
+        <dynamicallyLoadedPart filename="$data/placeables/shared/sellingStationGeneric/sellingStationGenericSmall.i3d" node="0" linkNode="grateLinkNode" />
     </dynamicallyLoadedParts>
 
     <silo playerActionTrigger="refillPlayerTrigger">
         <loadingStation node="loadingTrigger" supportsExtension="false">
-            <loadTrigger triggerNode="loadingTrigger" aiNode="loadingStationAINode" fillTypes="SEEDS LIME FERTILIZER LIQUIDFERTILIZER HERBICIDE SILAGE_ADDITIVE MANURE LIQUIDMANURE DIGESTATE WATER" fillLitersPerSecond="4000">
+            <loadTrigger triggerNode="loadingTrigger" fillTypeCategories="FILLSTATION_FIELDWORK" fillLitersPerSecond="4000" aiNode="aiNodeLoading" >
                 <effectNode effectClass="PipeEffect" effectNode="pipeEffect" materialType="pipe" fadeTime="0.5" maxBending="0" shapeScaleSpread="0.8 0.8 1 0" controlPoint="3 0 0 0"/>
                 <effectNode effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
             </loadTrigger>
         </loadingStation>
 
         <unloadingStation supportsExtension="false">
-            <unloadTrigger fillTypes="SEEDS LIME FERTILIZER LIQUIDFERTILIZER HERBICIDE SILAGE_ADDITIVE MANURE LIQUIDMANURE DIGESTATE WATER" exactFillRootNode="unloadBulkTrigger" aiNode="unloadStationAINode" />
-            <palletTrigger fillTypes="SEEDS LIME FERTILIZER LIQUIDFERTILIZER HERBICIDE SILAGE_ADDITIVE" triggerNode="unloadPalletTrigger" />
+            <unloadTrigger fillTypeCategories="FILLSTATION_FIELDWORK" exactFillRootNode="unloadBulkTrigger" aiNode="unloadStationAINode" />
+            <palletTrigger fillTypeCategories="FILLSTATION_FIELDWORK" triggerNode="unloadPalletTrigger" />
         </unloadingStation>
 
         <storages>
-            <storage node="storage" fillTypes="SEEDS LIME FERTILIZER LIQUIDFERTILIZER HERBICIDE SILAGE_ADDITIVE MANURE LIQUIDMANURE DIGESTATE WATER" capacity="100000" supportsMultipleFillTypes="true" isExtension="false" />
+            <storage node="storage" fillTypeCategories="FILLSTATION_FIELDWORK" capacity="100000" supportsMultipleFillTypes="true" isExtension="false" />
         </storages>
     </silo>
 
@@ -95,7 +90,7 @@
     <!-- leverage the solar panels customization to provide patina -->
     <solarPanels>
         <solarPanelsConfigurations title="$l10n_configuration_patina">
-            <solarPanelsConfiguration name="$l10n_ui_no" isActive="true" price="0" incomePerHour="0">
+            <solarPanelsConfiguration name="$l10n_configuration_valueDefault" isActive="true" price="0" incomePerHour="0">
                 <objectChange node="binColorable" visibilityActive="true"/>
                 <objectChange node="binRustyLight" visibilityActive="false"/>
                 <objectChange node="binRustyDark" visibilityActive="false"/>
@@ -114,10 +109,11 @@
     </solarPanels>
 
     <colorConfigurations useDefaultColors="false" postLoadObjectChange="false" price="0">
-        <colorConfiguration color="GMNG_BLACK1" isDefault="true" />
+        <colorConfiguration color="GMNG_HELLAOLDBLACK" />
+        <colorConfiguration color="GMNG_BLACK1" />
         <colorConfiguration color="GMNG_BLACK2" />
         <colorConfiguration color="RUDOLFHOERMANN_DARKGREY" />
-        <colorConfiguration color="RUDOLFHOERMANN_GREYALU" />
+        <colorConfiguration color="RUDOLFHOERMANN_GREYALU" isDefault="true" />
         <colorConfiguration color="SHARED_GREY3" />
         <colorConfiguration color="RUDOLFHOERMANN_LIGHTGREY" />
         <colorConfiguration color="SHARED_WHITE2" />
@@ -152,8 +148,9 @@
     <i3dMappings>
         <i3dMapping id="binLinkNode" node="0>0" />
         <i3dMapping id="binColorable" node="0>0|0" />  
-        <i3dMapping id="binColorableBody" node="0>0|0|1" />   
-        <i3dMapping id="binRusty" node="0>0|1" />
+        <i3dMapping id="binColorableBody" node="0>0|0|1" />  
+        <i3dMapping id="binRustyLight" node="0>0|1" />
+        <i3dMapping id="binRustyDark" node="0>0|2" />
 
         <i3dMapping id="clearArea1Start" node="0>1|0" />
         <i3dMapping id="clearArea1Width" node="0>1|0|0" />
@@ -172,6 +169,8 @@
         <i3dMapping id="mapPosition" node="0>6|0" />
         <i3dMapping id="playerTrigger" node="0>6|1" />
         <i3dMapping id="playerTriggerMarker" node="0>6|1|0" />
+        <i3dMapping id="refillPlayerTrigger" node="0>6|1" />
+        <i3dMapping id="playerTriggerMarker" node="0>6|1|0" />
 
         <!-- buying station -->
         <i3dMapping id="buyingStation" node="0>7" />        
@@ -186,10 +185,13 @@
         <i3dMapping id="sellingStation" node="0>8" />
         <i3dMapping id="unloadBulkTrigger" node="0>8|0" />
         <i3dMapping id="unloadPalletTrigger" node="0>8|1" />
-        <i3dMapping id="unloadStationAINode" node="0>8|2" />
-        <i3dMapping id="markerUnloading" node="0>8|3" />  
-        <i3dMapping id="unloadVisualLinkNode" node="0>8|4" />
-        <i3dMapping id="unloadBaleTrigger" node="0>8|5" />
+        <i3dMapping id="unloadBaleTrigger" node="0>8|2" />
+        <i3dMapping id="unloadStationAINode" node="0>8|3" />
+        <i3dMapping id="markerUnloading" node="0>8|4" />  
+        <i3dMapping id="stripesLinkNode" node="0>8|5" />
+        <i3dMapping id="grateLinkNode" node="0>8|6" />
+
+        <i3dMapping id="storage" node="0>9" />
 
     </i3dMappings>
 </placeable>

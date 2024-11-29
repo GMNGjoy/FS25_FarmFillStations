@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="buyingStationConfigurable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/1.5.0.0/placeable.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="xml/bulkFillStation.xml">
+        <attributes>
+            <!-- update storedata -->
+            <set path="placeable.storeData.name" value="$l10n_shopItem_bulkFillStationFree"/>
+            <set path="placeable.storeData.price" value="15000"/>
+            <set path="placeable.storeData.image" value="icons/store_fieldworkFillStation_olive.png"/>
+
+            <!-- update to fill types to match the new ones -->
+            <set path="placeable.buyingStation.fillType(0)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(1)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(2)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(3)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(4)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(5)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(6)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(7)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(8)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(9)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(10)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(11)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(12)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(13)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(14)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(15)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(16)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(17)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(18)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(19)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(20)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(21)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(22)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(23)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(24)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(25)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(26)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(27)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(28)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(29)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(30)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(31)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(32)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(33)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(34)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(35)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(36)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(37)#priceScale" value="0" />
+
+            <!-- set the default color to match -->
+            <set path="placeable.colorConfigurations.colorConfiguration(18)#isDefault" value="false" />
+            <set path="placeable.colorConfigurations.colorConfiguration(19)#isDefault" value="true" />
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>$l10n_shopItem_bulkFillStationFree</name>
+        <image>icons/store_fieldworkFillStatio_olive.dds</image>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+    </storeData>
+</placeable>
