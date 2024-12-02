@@ -7,6 +7,7 @@
             <!-- update storedata -->
             <set path="placeable.storeData.name" value="$l10n_shopItem_husbandryFillStationFree"/>
             <set path="placeable.storeData.price" value="15000"/>
+            <set path="placeable.storeData.functions.function(1)" value="$l10n_shopItem_fillStationFree"/>
             <set path="placeable.storeData.image" value="icons/store_fieldworkFillStation_brown.png"/>
 
             <!-- update to be an free for all fill types -->

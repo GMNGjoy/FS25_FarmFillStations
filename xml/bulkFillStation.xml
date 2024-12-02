@@ -4,6 +4,7 @@
         <name>$l10n_shopItem_bulkFillStation</name>
         <functions>
             <function>$l10n_function_bulkFillStation</function>
+            <function>$l10n_shopItem_fillStationDiscount</function>
             <function>$l10n_function_alsoSellStation</function>
         </functions>
         <image>icons/store_fieldworkFillStation_rudyGreen.png</image>
