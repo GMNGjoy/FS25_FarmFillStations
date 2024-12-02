@@ -31,7 +31,7 @@ For FS25, I've updated the Fill Station to be everything that I've wanted, all i
 ### Free Fill Station
 *Detail:* Free Free FREE when buying, 30% bonus when selling!
 *Category:* Containers
-*Price:* $5,000
+*Price:* $15,000
 *Monthly upkeep:* $9
 
 ### Fill Station Silo
