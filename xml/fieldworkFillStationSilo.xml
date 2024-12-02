@@ -63,7 +63,7 @@
         <dynamicallyLoadedPart filename="$data/placeables/shared/sellingStationGeneric/sellingStationGenericSmall.i3d" node="0" linkNode="grateLinkNode" />
     </dynamicallyLoadedParts>
 
-    <silo playerActionTrigger="refillPlayerTrigger">
+    <silo playerActionTrigger="playerTrigger">
         <loadingStation node="loadingTrigger" supportsExtension="false">
             <loadTrigger triggerNode="loadingTrigger" fillTypeCategories="FILLSTATION_FIELDWORK" fillLitersPerSecond="4000" aiNode="aiNodeLoading" >
                 <effectNode effectClass="PipeEffect" effectNode="pipeEffect" materialType="pipe" fadeTime="0.5" maxBending="0" shapeScaleSpread="0.8 0.8 1 0" controlPoint="3 0 0 0"/>
@@ -143,9 +143,9 @@
         <colorConfiguration color="LIZARD_PURPLE1" />
         <colorConfiguration color="RUDOLFHOERMANN_BEIGE" />
         <colorConfiguration color="RUDOLFHOERMANN_DARKBEIGE" />
+        <colorConfiguration color="JOHNDEERE_BROWN1" />
         <colorConfiguration color="SHARED_BROWN1" />
         <colorConfiguration color="RUDOLFHOERMANN_BROWN" />
-        
         <node node="binColorableBody" />
     </colorConfigurations>
 
@@ -172,8 +172,6 @@
 
         <i3dMapping id="mapPosition" node="0>6|0" />
         <i3dMapping id="playerTrigger" node="0>6|1" />
-        <i3dMapping id="playerTriggerMarker" node="0>6|1|0" />
-        <i3dMapping id="refillPlayerTrigger" node="0>6|1" />
         <i3dMapping id="playerTriggerMarker" node="0>6|1|0" />
 
         <!-- buying station -->

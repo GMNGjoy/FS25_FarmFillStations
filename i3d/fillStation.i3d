@@ -63,7 +63,7 @@
   <Scene>
     <TransformGroup name="fillStation" nodeId="41">
       <TransformGroup name="visuals" nodeId="42">
-        <TransformGroup name="fillStationBin" translation="1.56539e-05 1.36709 0.346334" nodeId="43">
+        <TransformGroup name="fillStationBin" translation="1.56539e-05 1.36709 0.346334" clipDistance="300" nodeId="43">
           <Shape name="base3" translation="-1.56539e-05 -1.36709 -0.346334" rotation="-6.83019e-06 60 0" shapeId="1" clipDistance="300" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="7"/>
           <Shape name="bin3" translation="-1.56539e-05 -1.36709 -0.346334" rotation="-6.83019e-06 -0 0" shapeId="2" clipDistance="300" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="6"/>
           <Shape name="braceBrakets" translation="-1.56539e-05 -1.36709 -0.346334" rotation="-6.83019e-06 -0 0" shapeId="3" clipDistance="300" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="8"/>
@@ -81,7 +81,7 @@
           <Shape name="stairs" translation="-1.56539e-05 -1.36709 -0.346334" rotation="-6.83019e-06 -0 0" shapeId="15" clipDistance="300" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="8"/>
           <Shape name="straps" translation="-1.56539e-05 -1.36709 -0.346334" rotation="-6.83019e-06 -0 0" shapeId="16" clipDistance="300" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="8"/>
         </TransformGroup>
-        <TransformGroup name="fillStationLightRust" translation="1.56539e-05 1.36709 0.346334" visibility="false" nodeId="60">
+        <TransformGroup name="fillStationLightRust" translation="1.56539e-05 1.36709 0.346334" visibility="false" clipDistance="300" nodeId="60">
           <Shape name="base" translation="-1.56539e-05 -1.36709 -0.346334" rotation="-6.83019e-06 -0 0" shapeId="17" nodeId="61" castsShadows="false" receiveShadows="false" materialIds="10"/>
           <Shape name="bin" translation="-1.56539e-05 -1.36709 -0.346334" rotation="-6.83019e-06 -0 0" shapeId="18" clipDistance="300" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="10"/>
           <Shape name="braceBrakets" translation="-1.56539e-05 -1.36709 -0.346334" rotation="-6.83019e-06 -0 0" shapeId="3" clipDistance="300" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="10"/>
@@ -98,7 +98,7 @@
           <Shape name="stairs" translation="-1.56539e-05 -1.36709 -0.346334" rotation="-6.83019e-06 -0 0" shapeId="15" clipDistance="300" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="10"/>
           <Shape name="straps" translation="-1.56539e-05 -1.36709 -0.346334" rotation="-6.83019e-06 -0 0" shapeId="16" clipDistance="300" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="10"/>
         </TransformGroup>
-        <TransformGroup name="fillStationDarkRust" translation="1.56539e-05 1.36709 0.346334" visibility="false" nodeId="76">
+        <TransformGroup name="fillStationDarkRust" translation="1.56539e-05 1.36709 0.346334" visibility="false" clipDistance="300" nodeId="76">
           <Shape name="base" translation="-1.56539e-05 -1.36709 -0.346334" rotation="-6.83019e-06 -0 0" shapeId="17" nodeId="77" castsShadows="false" receiveShadows="false" materialIds="9"/>
           <Shape name="bin" translation="-1.56539e-05 -1.36709 -0.346334" rotation="-6.83019e-06 -0 0" shapeId="18" clipDistance="300" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="9"/>
           <Shape name="braceBrakets" translation="-1.56539e-05 -1.36709 -0.346334" rotation="-6.83019e-06 -0 0" shapeId="3" clipDistance="300" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="9"/>

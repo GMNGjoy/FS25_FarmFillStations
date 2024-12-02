@@ -29,6 +29,10 @@
         <canBeRenamed>true</canBeRenamed>
     </base>
 
+    <deletedNodes>
+        <deletedNode node="playerTrigger" />
+    </deletedNodes>
+
     <placement useRandomYRotation="false" useManualYRotation="true" >
         <testAreas>
             <testArea startNode="testArea1Start" endNode="testArea1End" />
@@ -161,14 +165,12 @@
         <colorConfiguration color="RUDOLFHOERMANN_BROWN" />
         <material slotName="grainBinColorable" />
         <node node="binColorableBody" />
-        <!-- <node node="binColorableNeck" /> -->
     </colorConfigurations>
 
     <i3dMappings>
         <i3dMapping id="binLinkNode" node="0>0" />
         <i3dMapping id="binColorable" node="0>0|0" />  
-        <i3dMapping id="binColorableBody" node="0>0|0|1" />  
-        <!-- <i3dMapping id="binColorableNeck" node="0>0|0|8" />   -->
+        <i3dMapping id="binColorableBody" node="0>0|0|1" />
         <i3dMapping id="binRustyLight" node="0>0|1" />
         <i3dMapping id="binRustyDark" node="0>0|2" />
 
@@ -188,8 +190,6 @@
 
         <i3dMapping id="mapPosition" node="0>6|0" />
         <i3dMapping id="playerTrigger" node="0>6|1" />
-        <i3dMapping id="playerTriggerMarker" node="0>6|1|0" />
-        <i3dMapping id="refillPlayerTrigger" node="0>6|1" />
         <i3dMapping id="playerTriggerMarker" node="0>6|1|0" />
 
         <!-- buying station -->
