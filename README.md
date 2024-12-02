@@ -1,5 +1,5 @@
 # Farm Fill Stations
-The [Fieldwork Fill Station](https://github.com/GMNGjoy/FS22_FieldworkFillStation) was my first ever mod for Farming Simulator 22 that was submitted to ModHub &amp; accepted on Aug 30, 2022, and as of the release of FS25, has racked up over 277k downloads!
+The [Fieldwork Fill Station](https://github.com/GMNGjoy/FS22_FieldworkFillStation) was my first ever mod for Farming Simulator 22, which was submitted to ModHub &amp; accepted on Aug 30, 2022. As of the release of Farming Simulator 25, the _Fieldwork Fill Station_ has racked up over 277k downloads!
 
 For FS25, I've updated the Fill Station to be everything that I've wanted, all in one mod. Both the normal _Fill Station_ and the _Free Fill Station_ also include a selling point for the same products underneath the spout. The _Fill Station Silo_ works as a normal silo for any product that it supports, as well as an trigger off to the side to pay to fill it with any amount of any supporting product.
 
@@ -106,7 +106,7 @@ For FS25, I've updated the Fill Station to be everything that I've wanted, all i
 ![Fill up your trailer or tools - at a 30% discount!](/_screenshots/screenshot_1_buy.png)
 <br/><br/>
 
-![Every Fill Station is also a sell station for the same products - with a 30% profit!](/_screenshots/screenshot_2_sell.png)
+![Every Fill Station is also a sell station for the same products - with an extra 30% bonus!](/_screenshots/screenshot_2_sell.png)
 <br/><br/>
 
 ![Fill up your tools directly; Pay a bit more for a Free Fill Station and never pay for products again!](/_screenshots/screenshot_3_free.png)
