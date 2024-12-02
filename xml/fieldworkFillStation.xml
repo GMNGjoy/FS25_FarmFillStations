@@ -4,7 +4,7 @@
         <name>$l10n_shopItem_fieldworkFillStation</name>
         <functions>
             <function>$l10n_function_fieldworkFillStation</function>
-            <function>$l10n_shopItem_fillStationDiscount</function>
+            <function>$l10n_function_fillStationDiscount</function>
             <function>$l10n_function_alsoSellStation</function>
         </functions>
         <image>icons/store_fieldworkFillStation_black.png</image>

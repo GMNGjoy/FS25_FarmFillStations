@@ -2,8 +2,8 @@
 <l10n>
     <translationContributors/>
     <texts>
-        <text name="shopItem_fillStationDiscount" text="30% discount for buying bulk!" />
-        <text name="shopItem_fillStationFree" text="Everything is FREE!" />
+        <text name="function_fillStationDiscount" text="30% discount for buying bulk!" />
+        <text name="function_fillStationFree" text="Everything is FREE!" />
 
         <text name="shopItem_fieldworkFillStation" text="Fieldwork Fill Station" />
         <text name="shopItem_fieldworkFillStationFree" text="Free Fieldwork Fill Station" />
@@ -35,7 +35,7 @@
         <text name="configuration_patina" text="Patina" />
         <text name="patina_light" text="Rusty but trusty" />
         <text name="patina_dark" text="Dark &amp; Rusty" />
-        
+
         <text name="binColor_black1" text="Blackest Black" />
         <text name="binColor_black2" text="Somewhat Black" />
         <text name="color_hellaBlack" text="Hella Black, Yo!" />
