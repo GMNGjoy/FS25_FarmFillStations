@@ -5,7 +5,7 @@
     <title>
         <en>Farm Fill Stations</en>
         <fr>Station De Remplissage De Travail Sur Le Terrain</fr>
-        <de>Feldarbeit-Füllstation</de>
+        <de>Bauernhof-Füllstation</de>
     </title>
     <description>
         <en><![CDATA[Fill Stations for all of your farm & fieldwork needs!
@@ -23,31 +23,29 @@ Four different types are available:
 
 "Bulk" for everything that can be loaded bulk into a trailer
 
-Three Styles are available:
+Each of these types is available in three different styles:
 
-Fieldwork Fill Station
+Fill Station
 Detail: 30% discount when buying all products, 30% bonus when selling!
 Category: Containers
 Price: $5,000
 Monthly upkeep: $9
-Configurations: Visual (Colorable w/ dozens of color options | Rusty but trusty, Dark Rusted)
+Configurations: Visual (Colorable w/ dozens of color options | Rusty but trusty | Dark Rusted)
 
-Free Fieldwork Fill Station
+Free Fill Station
 Detail: Free Free FREE when buying, 30% bonus when selling!
 Category: Containers
 Price: $15,000
 Monthly upkeep: $9
-Configurations: Visual (Colorable w/ dozens of color options | Rusty but trusty, Dark Rusted)
+Configurations: Visual (Colorable w/ dozens of color options | Rusty but trusty | Dark Rusted)
 
-Fieldwork Fill Station Silo
+Fill Station Silo
 Detail: Standard silo with the ability to fill any containing product!
 Category: Silos
 Capacity: 100,000 L
 Price: $10,000
 Monthly upkeep: $9
-Configurations: Visual (Colorable w/ dozens of color options | Rusty but trusty, Dark Rusted)
-
-... including alternate versions of each of the above "styles" for each "type.
+Configurations: Visual (Colorable w/ dozens of color options | Rusty but trusty | Dark Rusted)
 
 For license & feedback, please visit
 GitHub link: https://github.com/GMNGjoy/FS25_FarmFillStations
@@ -79,28 +77,47 @@ Prix : 15 000 $ (14 000 $ pour l'ancienne version)
 Entretien quotidien : 2 $
 
 ]]></fr>
-        <de><![CDATA[Befülle hier die Geräte, die Du für die Feldarbeit benötigst!
+        <de><![CDATA[Füllstationen für jeden Bedarf rund um den Bauernhof!
 
-Drei Versionen verfügbar:
-- Fieldwork Fill Station – Verkaufsstation mit 30 % Rabatt beim Kauf großer Mengen
-- Kostenlose Tankstelle für Feldarbeiten – kostenlos Kostenlos KOSTENLOS! Holen Sie sich alle verfügbaren Fülltypen kostenlos!
-- Fieldwork Fill Station Silo - Auf Ihrem Bauernhof unterstützt das Silo alle gleichen Produkte!
+Es gibt vier verschiedene Arten:
 
-Zwei Stile verfügbar:
-- Standard (Signature-Schwarz-Stil)
-- Alt (rostig, funktioniert aber genauso gut)
+"Feldarbeit" für jeden Bedarf rund um die Feldarbeit
+- Güter: Saatgut, Dünger, Kalk, Flüssigdünger, Herbizid, Siliermittel, Mist, Gülle, Gärreste, Kostenloses Wasser
 
-Fülltypen:
-- Saatgut
-- Mineraldünger
-- Kalk
-- Flüssigdünger
-- Herbizid
-- Silage-Zusatzstoff
-- Gülle
-- Schlamm
-- Gärrest
-- Wasser
+"Tierhaltung" für jeden Bedarf rund um die Fütterung
+- Güter: Weizen (Hühner), Hafer (Pferde), Schweinefutter (Schweine), Gras & Heu (Schafe, Kühe), Mischration (Kühe), Mineralfutter (Kühe), Stroh (Kühe, Pferde, Schweine), Kostenloses Wasser
+
+"Flüssigkeit" für alle flüssigen und gasförmigen Güter
+- Güter: Milch, Büffelmilch, Flüssigdünger, Herbizid, Siliermittel, Gülle, Gärreste, Kostenloses Wasser
+
+"Schüttgut" für alles, was in einen Anhänger geschüttet werden kann
+
+Für jede dieser Arten gibt es jeweils drei Stile:
+
+Füllstation
+Details: 30% Rabatt für alle Produkte, 30% Bonus beim Verkauf!
+Kategorie: Container
+Preis: 5.000 €
+Monatliche Unterhaltskosten: 9 €
+Konfigurationen: Oberfläche (Standard mit großer Farbauswahl | Leicht rostig | Stark rostig)
+
+Gratis Füllstation
+Details: Alle Produkte sind GRATIS, 30% Bonus beim Verkauf!
+Kategorie: Container
+Preis: 15.000 €
+Monatliche Unterhaltskosten: 9 €
+Konfigurationen: Oberfläche (Standard mit großer Farbauswahl | Leicht rostig | Stark rostig)
+
+Füllstationssilo
+Details: 30% Rabatt für alle Produkte, 30% Bonus beim Verkauf!
+Kategorie: Silos
+Kapazität: 100.000 L
+Preis: 5.000 €
+Monatliche Unterhaltskosten: 9 €
+Konfigurationen: Oberfläche (Standard mit großer Farbauswahl | Leicht rostig | Stark rostig)
+
+Besucht für Lizenz & Feedback bitte
+GitHub-Link: https://github.com/GMNGjoy/FS25_IndustrialSawmill
 ]]></de>
     </description>
     <iconFilename>icon_farmFillStations.dds</iconFilename>

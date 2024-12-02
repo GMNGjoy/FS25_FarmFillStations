@@ -6,6 +6,7 @@
         <attributes>
             <!-- update storedata -->
             <set path="placeable.storeData.name" value="$l10n_shopItem_liquidFillStationFree"/>
+            <set path="placeable.storeData.price" value="15000"/>
             <set path="placeable.storeData.image" value="icons/store_fieldworkFillStation_blue2.png"/>
 
             <!-- update to fill types to match the new ones -->

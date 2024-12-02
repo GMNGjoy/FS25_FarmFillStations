@@ -5,7 +5,7 @@
     <parentFile xmlFilename="xml/fieldworkFillStationSilo.xml">
         <attributes>
             <!-- update storedata -->
-            <set path="placeable.storeData.name" value="$l10n_shopItemliquidFillStationSilo"/>
+            <set path="placeable.storeData.name" value="$l10n_shopItem_liquidFillStationSilo"/>
             <set path="placeable.storeData.function(0)" value="$l10n_shopItem_liquidFillStationSilo"/>
             <set path="placeable.storeData.price" value="10000"/>
             <set path="placeable.storeData.image" value="icons/store_fieldworkFillStation_blue1.png"/>
