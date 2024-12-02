@@ -11,13 +11,13 @@
             <set path="placeable.storeData.image" value="icons/store_fieldworkFillStation_jdBrown1.png"/>
 
             <!-- update to fill types to match the new ones -->
-            <set path="placeable.silo.loadingStation.loadTrigger#fillTypeCategories" value="FILLSTATION_HUSBANDRY" />
-            <set path="placeable.silo.unloadingStation.unloadTrigger#fillTypeCategories" value="FILLSTATION_HUSBANDRY" />
-            <set path="placeable.silo.unloadingStation.palletTrigger#fillTypeCategories" value="FILLSTATION_HUSBANDRY" />
-            <set path="placeable.silo.storages.storage#fillTypeCategories" value="FILLSTATION_HUSBANDRY" />
+            <set path="placeable.silo.loadingStation.loadTrigger#fillTypeCategories" value="FILLSTATION_HUSBANDRY_BUY" />
+            <set path="placeable.silo.unloadingStation.unloadTrigger#fillTypeCategories" value="FILLSTATION_HUSBANDRY_BUY" />
+            <set path="placeable.silo.unloadingStation.palletTrigger#fillTypeCategories" value="FILLSTATION_HUSBANDRY_BUY" />
+            <set path="placeable.silo.storages.storage#fillTypeCategories" value="FILLSTATION_HUSBANDRY_BUY" />
 
             <!-- add in a bale trigger for straw / hay / grass -->
-            <set path="placeable.silo.unloadingStation.baleTrigger#fillTypeCategories" value="FILLSTATION_HUSBANDRY" />
+            <set path="placeable.silo.unloadingStation.baleTrigger#fillTypeCategories" value="FILLSTATION_HUSBANDRY_BUY" />
             <set path="placeable.silo.unloadingStation.baleTrigger#triggerNode" value="unloadBaleTrigger" />
 
             <!-- set the default color to match -->

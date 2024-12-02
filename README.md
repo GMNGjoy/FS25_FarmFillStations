@@ -3,7 +3,7 @@ This was My first ever mod for Farming Simulator 22 that was submitted to ModHub
 
 For FS25, I've updated the Fill Station to be everything that I've wanted, all in one mod. Both the normal _Fill Station_ and the _Free Fill Station_ also include a selling point for the same products underneath the spout. The _Fill Station Silo_ works as a normal silo for any product that it supports, as well as an trigger off to the side to pay to fill it with any amount of any supporting product.
 
-## Four different types are available:
+## Four types
 
 ### Fieldwork
 ... for all your field work needs
@@ -20,7 +20,7 @@ For FS25, I've updated the Fill Station to be everything that I've wanted, all i
 ### Bulk
 ... for everything that can be loaded bulk into a trailer
 
-## Three Styles are available:
+## Three Styles
 
 ### Fill Station 
 *Detail:* 30% discount when buying all products, 30% bonus when selling!
@@ -42,10 +42,10 @@ For FS25, I've updated the Fill Station to be everything that I've wanted, all i
 *Monthly upkeep:* $9
 
 
-## Customization Options
-- All Fill Stations are colorable verison with 37 color options, which can be further customized with the [Unlimited Color Configurations](https://www.farming-simulator.com/mod.php?mod_id=303885&title=fs2025) mod from Giants.
-- Rusty but trusty version (no custom colors)
-- Dark &amp; Rusty version (no custom colors)
+## Multiple Customization Options
+- All Fill Stations are colorable verison with dozens of color options, which can be further customized with the [Unlimited Color Configurations](https://www.farming-simulator.com/mod.php?mod_id=303885&title=fs2025) mod from Giants.
+- _Rusty but trusty_ version (no custom colors)
+- _Dark &amp; Rusty_ version (no custom colors)
 
 
 ## Description from the ModDesc
@@ -103,25 +103,24 @@ For FS25, I've updated the Fill Station to be everything that I've wanted, all i
 
 ## Screenshots
 
-![Fieldwork Fill Station](/_screenshots/fieldworkFill_screenshot_1)
-_Fieldwork Fill Station_
+![Fill up your trailer or tools - at a 30% discount!](/_screenshots/screenshot_1_buy.png)
+<br/><br/>
 
-![Fill Station - normal fill](/_screenshots/fieldworkFill_screenshot_2.png)
-_Fieldwork Fill Station filling up a trailer_
+![Every Fill Station is also a sell station for the same products - with a 30% profit!](/_screenshots/screenshot_2_sell.png)
+<br/><br/>
 
-![Fill Station - liquid](/_screenshots/fieldworkFill_screenshot_3.png)
-_Fieldwork Fill Station filling a sprayer with liquid fertilizer or herbacide_
+![Fill up your tools directly; Pay a bit more for a Free Fill Station and never pay for products again!](/_screenshots/screenshot_3_free.png)
+<br/><br/>
 
-![Fill Station - lime](/_screenshots/fieldworkFill_screenshot_4.png)
-_Fieldwork Fill Station filling a spreader with Lime_
+![Don't feel like farming to feed your animals? Buy everything you need at a Husbandry Fill Station!](/_screenshots/screenshot_4_husbandry.png)
+<br/><br/>
 
-![Fill Station - manure](/_screenshots/fieldworkFill_screenshot_5.png)
-_Fieldwork Fill Station filling up a manure spreader_
+![A Liquid FIll Station is a great source for all of your liquid needs - Water is always FREE at any of the Fill Stations.](/_screenshots/screenshot_5_liquids.png)
+<br/><br/>
 
-![Fieldwork Fill Station Old & Modern versions](/_screenshots/fieldworkFill_screenshot_6.png)
-_Fieldwork Fill Station Old &amp; Modern versions side by side_
+![A little short from the last harvest? Make up the difference with a Bulk FIll Station.](/_screenshots/screenshot_6_bulk.png)
+<br/><br/>
 
-![Fieldwork Fill Station Free & Silo versions](/_screenshots/fieldworkFill_screenshot_7.png)
-_Fieldwork Fill Station Free & Silo versions_
+![Dozens of colors or two "Rusty but trusty" styles to choose from for any Fill Station!](/_screenshots/screenshot_7_colors.png)
 
 
