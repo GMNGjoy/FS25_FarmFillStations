@@ -5,7 +5,7 @@
     </translationContributors>
     <texts>
         <text name="function_fillStationDiscount" text="30% Rabatt für Großmengen!" />
-        <text name="function_fillStationFree" text="Everything is FREE!" />
+        <text name="shopItem_fillStationFree" text="Alles ist KOSTENLOS!" />
 
         <text name="shopItem_fieldworkFillStation" text="Feldarbeit-Füllstation" />
         <text name="shopItem_fieldworkFillStationFree" text="Gratis Feldarbeit-Füllstation" />
