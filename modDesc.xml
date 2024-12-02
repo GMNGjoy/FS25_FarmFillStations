@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<modDesc descVersion="92">
+<modDesc descVersion="93">
     <author>GMNGjoy</author>
-    <version>0.9.0.29</version>
+    <version>1.0.0.0</version>
     <title>
         <en>Farm Fill Stations</en>
         <fr>Station De Remplissage De Travail Sur Le Terrain</fr>
@@ -21,7 +21,7 @@ Four different types are available:
 "Liquid" for all your liquid and gaseous supplies
 - Fill Types: Milk, Buffalo Milk, Liquid Fertilizer, Herbicide, Silage Additive, Slurry, Digestate, Free Water 
 
-"Bulk" for everything else that can be loaded bulk into a trailer
+"Bulk" for everything that can be loaded bulk into a trailer
 
 Three Styles are available:
 
@@ -42,14 +42,15 @@ Configurations: Visual (Colorable w/ 37 options | Rusty but trusty, Dark Rusted)
 Fieldwork Fill Station Silo
 Detail: Standard silo with the ability to fill any containing product!
 Category: Silos
+Capacity: 100,000 L
 Price: $10,000
 Monthly upkeep: $9
 Configurations: Visual (Colorable w/ 37 options | Rusty but trusty, Dark Rusted)
 
-... incliding alternate versions of each of the
+... including alternate versions of each of the above "styles" for each "type.
 
 For license & feedback, please visit
-GitHub link: https://github.com/GMNGjoy/FS25_IndustrialSawmill
+GitHub link: https://github.com/GMNGjoy/FS25_FarmFillStations
 ]]></en>
         <fr><![CDATA[Chargez vos outils pour tous vos besoins de travail sur le terrain!
 
@@ -77,14 +78,6 @@ Types de remplissage:
 Prix : 15 000 $ (14 000 $ pour l'ancienne version)
 Entretien quotidien : 2 $
 
-Changelog v1.1.0.0
-- Version Silo ajoutée (ne prend pas en charge la remise)
-- Ajout du style "Old" (Rusty) dans les trois versions
-
-Changelog v1.0.0.1
-- Ajout de fumier, lisier, digestat &amp; Eau
-- Augmentation des taux de remplissage pour tous les produits
-- Rabais majoré
 ]]></fr>
         <de><![CDATA[Befülle hier die Geräte, die Du für die Feldarbeit benötigst!
 
@@ -108,18 +101,6 @@ Fülltypen:
 - Schlamm
 - Gärrest
 - Wasser
-
-Preis: 15.000 $ (14.000 $ für die alte Version)
-Täglicher Unterhalt: 2 $
-
-Changelog v1.1.0.0
-- Silo-Version hinzugefügt (unterstützt keinen Rabatt)
-- „Alter“ (rostiger) Stil in allen drei Versionen hinzugefügt
-
-Changelog v1.0.0.1
-- Gülle, Gülle, Gärrest &amp; Wasser
-- Erhöhte Füllraten für alle Produkte
-- Erhöhter Rabatt
 ]]></de>
     </description>
     <iconFilename>icon_farmFillStations.dds</iconFilename>

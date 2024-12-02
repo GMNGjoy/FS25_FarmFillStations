@@ -1,49 +1,103 @@
 # Fieldwork Fill Station
-My first ever mod for Farming Simulator 22 that was submitted to ModHub &amp; accepted on Aug 30, 2022, now with over 120k downloads!
+This was My first ever mod for Farming Simulator 22 that was submitted to ModHub &amp; accepted on Aug 30, 2022, and as of the release of FS25, has over 277k downloads!
 
-The Fieldwork Fill Station is designed to provide your farm with all of it's Fieldwork Fill needs - seeds, fertilizer, lime, slurry, manure, digestate, water, and even silage additive. With a fill speed of 4000 l/m, it's the fastest water source on console! 
+For FS25, I've updated the Fill Station to be everything that I've wanted, all in one mod. Both the normal _Fill Station_ and the _Free Fill Station_ also include a selling point for the same products underneath the spout. The _Fill Station Silo_ works as a normal silo for any product that it supports, as well as an trigger off to the side to pay to fill it with any amount of any supporting product.
 
-In the _1.1.0.0_ update, we're introducing a _Silo_ version that you can fill on your own (or buy from the direct), as well as an _Old_ style of the Fill Station (in all three versions) that is all rusty for those start from nothing thematic playthroughs. Unfortunately, the _Silo_ version does not support the 30% discount.
+## Four different types are available:
 
-The Fieldwork Fill Station is released for _ALL PLATFORMS_.
+### Fieldwork
+... for all your field work needs
+- Fill Types: Seeds, Fertilizer, Lime, Liquid Fertilizer, Herbicide, Silage Additive, Manure, Slurry, Digestate, Free Water 
 
-Special thank you to:
-- [RustyMoney Gaming](https://www.youtube.com/@RustyMoneyGaming) for the _old_ version request
-- [WHYTEBLUR Gaming](https://www.youtube.com/@WHYTEBLURGaming) for the _silo_ version request
-- Everyone who downloads and rates [the mod on ModHub](https://farming-simulator.com/mod.php?lang=en&country=us&mod_id=251896&title=fs2022)!
+### Husbandry
+... for all your animal feeding needs
+- Fill Types: Wheat (Chickens), Oats (Horses), Pig Food (Pigs), Grass & Hay (Sheep, Cows), Total Mixed Ration (Cows), Mineral Food (Cows), Silage (Cows), Straw (Cows, Horses, Pigs), Free Water
+
+### Liquid
+... for all your liquid and gaseous supplies
+- Fill Types: Milk, Buffalo Milk, Liquid Fertilizer, Herbicide, Silage Additive, Slurry, Digestate, Free Water 
+
+### Bulk
+... for everything that can be loaded bulk into a trailer
+
+## Three Styles are available:
+
+### Fill Station 
+*Detail:* 30% discount when buying all products, 30% bonus when selling!
+*Category:* Containers
+*Price:* $5,000
+*Monthly upkeep:* $9
+
+### Free Fill Station
+*Detail:* Free Free FREE when buying, 30% bonus when selling!
+*Category:* Containers
+*Price:* $5,000
+*Monthly upkeep:* $9
+
+### Fill Station Silo
+*Detail:* Standard silo with the ability to fill any containing product!
+*Category:* Silos
+*Capacity:* 100,000 L
+*Price:* $10,000
+*Monthly upkeep:* $9
+
+
+## Customization Options
+- All Fill Stations are colorable verison with 37 color options, which can be further customized with the [Unlimited Color Configurations](https://www.farming-simulator.com/mod.php?mod_id=303885&title=fs2025) mod from Giants.
+- Rusty but trusty version (no custom colors)
+- Dark &amp; Rusty version (no custom colors)
+
 
 ## Description from the ModDesc
-> Load up your implements for all of your fieldwork needs!
->         
-> Three versions available:
-> - Fieldwork Fill Station - Selling Station with a 30% discount for buying bulk
-> - Free Fieldwork Fill Station - free Free FREE! Get all available fill types for free!
-> - Fieldwork Fill Station Silo - On your farm Silo supporting all the same products!
+> Fill Stations for all of your farm & fieldwork needs!
 > 
-> Two styles available:
-> - Default (Signature black style)
-> - Old (Rusty but works just as good)
+> Four different types are available:
 > 
-> Fill Types:
-> - Seeds
-> - Fertilizer
-> - Lime
-> - Liquid Fertilizer
-> - Herbicide
-> - Silage Additive
-> - Manure
-> - Slurry
-> - Digestate
-> - Water
+> "Fieldwork" for all your field work needs
+> - Fill Types: Seeds, Fertilizer, Lime, Liquid Fertilizer, Herbicide, Silage Additive, Manure, Slurry, Digestate, Free Water 
 > 
-> Price: 15,000 $  (14,000 $ for Old version)
-> Daily Upkeep: 2 $ 
+> "Husbandry" for all your animal feeding needs
+> - Fill Types: Wheat (Chickens), Oats (Horses), Pig Food (Pigs), Grass & Hay (Sheep, Cows), Total Mixed Ration (Cows), Mineral Food (Cows), Silage (Cows), Straw (Cows, Horses, Pigs), Free Water
+> 
+> "Liquid" for all your liquid and gaseous supplies
+> - Fill Types: Milk, Buffalo Milk, Liquid Fertilizer, Herbicide, Silage Additive, Slurry, Digestate, Free Water 
+> 
+> "Bulk" for everything that can be loaded bulk into a trailer
+> 
+> Three Styles are available:
+> 
+> Fill Station
+> Detail: 30% discount when buying all products, 30% bonus when selling!
+> Category: Containers
+> Price: $5,000
+> Monthly upkeep: $9
+> Configurations: Visual (Colorable w/ 37 options | Rusty but trusty, Dark Rusted)
+> 
+> Free Fill Station
+> Detail: Free Free FREE when buying, 30% bonus when selling!
+> Category: Containers
+> Price: $5,000
+> Monthly upkeep: $9
+> Configurations: Visual (Colorable w/ 37 options | Rusty but trusty, Dark Rusted)
+> 
+> Fill Station Silo
+> Detail: Standard silo with the ability to fill any containing product!
+> Category: Silos
+> Capacity: 100,000 L
+> Price: $10,000
+> Monthly upkeep: $9
+> Configurations: Visual (Colorable w/ 37 options | Rusty but trusty, Dark Rusted)
+> 
+> ... including alternate versions of each of the above "styles" for each "type.
+> 
+> For license & feedback, please visit
+> GitHub link: https://github.com/GMNGjoy/FS25_FarmFillStations
 
 
 ## Installation Instructions
-1. Download this package from either _GitHub_ on the releases page, or [ModHub](https://farming-simulator.com/mod.php?lang=en&country=us&mod_id=251896&title=fs2022), save the `FS22_FieldworkFillStation.zip` file into your mod folder.
+1. Download this package from either _GitHub_ on the releases page, or [ModHub](linkTBD), save the `FS22_FarmFillStations.zip` file into your mod folder.
 2. Launch the game, and select the mod to load into the game
-3. Place the building in game as normal, and use as you would expect. 
+3. Place the building in game as normal, customize if desired, and use as you would expect. 
 4. Don't forget to rate the mod in the downloadable content menu in-game!
 
 

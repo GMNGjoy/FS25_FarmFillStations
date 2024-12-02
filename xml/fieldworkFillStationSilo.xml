@@ -31,6 +31,9 @@
         <testAreas>
             <testArea startNode="testArea1Start" endNode="testArea1End" />
         </testAreas>
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
     </placement>
 
     <clearAreas>
