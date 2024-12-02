@@ -6,7 +6,7 @@
         <attributes>
             <!-- update storedata -->
             <set path="placeable.storeData.name" value="$l10n_shopItem_bulkFillStationSilo"/>
-            <set path="placeable.storeData.function(0)" value="$l10n_shopItem_bulkFillStationSilo"/>
+            <set path="placeable.storeData.functions.function(0)" value="$l10n_function_bulkFillStationSilo"/>
             <set path="placeable.storeData.price" value="10000"/>
             <set path="placeable.storeData.image" value="icons/store_fieldworkFillStation_lightGreen.png"/>
 
