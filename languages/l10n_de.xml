@@ -4,28 +4,43 @@
         <translationContributor>Farmsim Tim</translationContributor>
     </translationContributors>
     <texts>
+        <text name="shopItem_fillStationDiscount" text="30% Rabatt für Großmengen!" />
+        <text name="shopItem_fillStationFree" text="Everything is FREE!" />
+
         <text name="shopItem_fieldworkFillStation" text="Feldarbeit-Füllstation" />
-        <text name="shopItem_fieldworkFillStationFree" text="Kostenlose Feldarbeit-Füllstation" />
-        <text name="shopItem_fieldworkFillStationSilo" text="Feldarbeits-Füllstationssilo" />
-        <text name="shopItem_fieldworkFillStationOld" text="Alte Feldarbeitstankstelle" />
-        <text name="shopItem_fieldworkFillStationOldFree" text="Alte Tankstelle für freie Feldarbeit" />
-        <text name="shopItem_fieldworkFillStationOldSilo" text="Altes Silo der Feldarbeitsfüllstation" />
-        <text name="function_fieldworkFillStation" text="Laden Sie Ihre Produkte für alle Ihre Aufträge auf, 30 % Rabatt bei Schüttgut!" />
-        <text name="function_fieldworkFillStationSilo" text="Silo für Ihren Bauernhof zur Lagerung aller Ihrer Feldarbeitsmaterialien." />
-        <text name="function_oldButStillGood" text="Es ist zwar etwas eingerostet, aber immer zuverlässig." />
-        <text name="shopItem_husbandryFillStation" text="Füllstation für Tierhaltung" />
-        <text name="shopItem_husbandryFillStationFree" text="Kostenlose Tankstelle für Tierhaltung" />
-        <text name="function_husbandryFillStation" text="Füttern Sie Ihre Tiere ohne den Aufwand der Landwirtschaft, 30 % Rabatt beim Kauf großer Mengen!" />
-        <text name="shopItem_liquidFillStation" text="Liquid Fill Station" />
-        <text name="shopItem_liquidFillStationFree" text="Free Liduid Fill Station" />
-        <text name="function_liquidFillStation" text="Fill your tank or tanker, 30% discount for buying bulk!" />
-        <text name="shopItem_bulkFillStation" text="Bulk Fill Station" />
-        <text name="shopItem_bulkFillStationFree" text="Free Bulk Fill Station" />
-        <text name="function_bulkFillStation" text="A bit short? Buy any bulk product at a 30% discount!" />
-        <text name="configuration_patina" text="Patina" />
-        <text name="patina_light" text="Light Patina" />
-        <text name="patina_dark" text="Dark Patina" />
-        <text name="binColor_black1" text="Blasses Schwarz" />
-        <text name="binColor_black2" text="Ultra Black" />
+        <text name="shopItem_fieldworkFillStationFree" text="Gratis Feldarbeit-Füllstation" />
+        <text name="shopItem_fieldworkFillStationSilo" text="Feldarbeit-Füllstationssilo" />
+        <text name="function_fieldworkFillStation" text="Befülle deine Geräte für deine Aufträge." />
+        <text name="function_fieldworkFillStationSilo" text="Silo für deinen Bauernhof zum Lagern von Gütern für die Feldarbeit." />
+
+        <text name="shopItem_husbandryFillStation" text="Tierhaltungs-Füllstation" />
+        <text name="shopItem_husbandryFillStationFree" text="Gratis Tierhaltungs-Füllstation" />
+        <text name="shopItem_husbandryFillStationSilo" text="Tierhaltungs-Füllstationssilo" />
+        <text name="function_husbandryFillStation" text="Füttere deine Tiere ohne den Aufwand für die Feldarbeit." />
+        <text name="function_husbandryFillStationSilo" text="Silo für deinen Bauernhof zum Lagern von Gütern für die Tierhaltung." />
+        
+        <text name="shopItem_bulkFillStation" text="Schüttgut-Füllstation" />
+        <text name="shopItem_bulkFillStationFree" text="Gratis Schüttgut-Füllstation" />
+        <text name="shopItem_bulkFillStationSilo" text="Schüttgut-Füllstationssilo" />
+        <text name="function_bulkFillStation" text="Zu wenig Material? Kaufe alle Schüttgüter." />
+        <text name="function_bulkFillStationSilo" text="Silo für deinen Bauernhof zum Lagern von Schüttgütern." />
+        
+        <text name="shopItem_liquidFillStation" text="Flüssigkeits-Füllstation" />
+        <text name="shopItem_liquidFillStationFree" text="Gratis Flüssigkeits-Füllstation" />
+        <text name="shopItem_liquidFillStationSilo" text="Flüssigkeits-Füllstationssilo" />
+        <text name="function_liquidFillStation" text="Fülle deinen Tank oder Tankwagen." />
+        <text name="function_liquidFillStationSilo" text="Silo für deinen Bauernhof zum Lagern von Flüssigkeiten." />
+        
+        <text name="function_oldButStillGood" text="Vielleicht ein wenig verrostet, aber dennoch zuverlässig." />
+        <text name="function_alsoSellStation" text="Zu viel gekauft? Verkaufe es einfach direkt wieder hier!" />
+        
+        <text name="configuration_patina" text="Oberfläche" />
+        <text name="patina_light" text="Leicht rostig" />
+        <text name="patina_dark" text="Stark rostig" />
+        
+        <text name="binColor_black1" text="Dunkles Schwarz" />
+        <text name="binColor_black2" text="Etwas Schwarz" />
+        <text name="color_hellaBlack" text="Richtig Schwarz" />
+        <text name="color_hellaOldBlack" text="Vintage Schwarz" />
     </texts>
 </l10n>
