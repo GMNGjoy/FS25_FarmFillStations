@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<modDesc descVersion="93">
+<modDesc descVersion="94">
     <author>GMNGjoy</author>
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
     <title>
         <en>Farm Fill Stations</en>
-        <fr>Station De Remplissage De Travail Sur Le Terrain</fr>
         <de>Bauernhof-Füllstation</de>
     </title>
     <description>
@@ -19,7 +18,7 @@ Four different types are available:
 - Fill Types: Wheat (Chickens), Oats (Horses), Pig Food (Pigs), Grass & Hay (Sheep, Cows), Total Mixed Ration (Cows), Mineral Food (Cows), Silage (Cows), Straw (Cows, Horses, Pigs), Free Water
 
 "Liquid" for all your liquid and gaseous supplies
-- Fill Types: Milk, Buffalo Milk, Liquid Fertilizer, Herbicide, Silage Additive, Slurry, Digestate, Free Water 
+- Fill Types: Milk, Buffalo Milk, Goat Milk, Liquid Fertilizer, Herbicide, Silage Additive, Slurry, Digestate, Free Water 
 
 "Bulk" for everything that can be loaded bulk into a trailer
 
@@ -49,34 +48,11 @@ Configurations: Visual (Colorable w/ dozens of color options | Rusty but trusty 
 
 For license & feedback, please visit
 GitHub link: https://github.com/GMNGjoy/FS25_FarmFillStations
+
+Changelog 1.0.0.1
+- Added Goat Milk to Liquid Fill Stations
+- Updated selling markers to conform to terrain
 ]]></en>
-        <fr><![CDATA[Chargez vos outils pour tous vos besoins de travail sur le terrain!
-
-Trois versions disponibles :
-- Station de remplissage de terrain - Station de vente avec une remise de 30 % pour l'achat en gros
-- Station de remplissage de terrain gratuite - gratuite Gratuite GRATUITE ! Obtenez gratuitement tous les types de remplissage disponibles !
-- Silo de station de remplissage de travail sur le terrain - Silo de votre ferme prenant en charge tous les mêmes produits !
-
-Deux styles disponibles :
-- Par défaut (style noir Signature)
-- Old (Rusty mais fonctionne tout aussi bien)
-
-Types de remplissage:
-- Des graines
-- Engrais
-- Chaux
-- Engrais Liquide
-- Herbicide Liquide
-- Additif d'ensilage
-- Fumier
-- Lisier
-- Digestat
-- Eau
-
-Prix : 15 000 $ (14 000 $ pour l'ancienne version)
-Entretien quotidien : 2 $
-
-]]></fr>
         <de><![CDATA[Füllstationen für jeden Bedarf rund um den Bauernhof!
 
 Es gibt vier verschiedene Arten:

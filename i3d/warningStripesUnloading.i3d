@@ -2,7 +2,7 @@
 
 <i3D name="warningStripesUnloading.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="10.0.2"/>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
   </Asset>
 
   <Files>
@@ -16,7 +16,7 @@
     <Material name="warningStripes_mat" materialId="5">
       <Texture fileId="1"/>
     </Material>
-    <Material name="warningStripes_mat" materialId="19">
+    <Material name="warningStripes_mat" materialId="6">
       <Texture fileId="1"/>
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
@@ -28,11 +28,11 @@
   </Shapes>
 
   <Scene>
-    <TransformGroup name="warningStripesSell" nodeId="11">
-      <Shape name="warningStripeCornerGMNG" translation="-1.1 0 1.1" shapeId="1" nodeId="12" castsShadows="false" receiveShadows="false" materialIds="19"/>
-      <Shape name="warningStripeCornerGMNG" translation="1.1 0 1.1" shapeId="2" nodeId="13" castsShadows="false" receiveShadows="false" materialIds="5"/>
-      <Shape name="warningStripeCornerGMNG" translation="-1.1 0 -1.1" shapeId="3" nodeId="14" castsShadows="false" receiveShadows="false" materialIds="5"/>
-      <Shape name="warningStripeCornerGMNG" translation="1.1 0 -1.1" shapeId="4" nodeId="15" castsShadows="false" receiveShadows="false" materialIds="5"/>
+    <TransformGroup name="warningStripesSell" nodeId="12">
+      <Shape name="warningStripeCornerGMNG" translation="-1.1 0 1.1" shapeId="1" nodeId="13" castsShadows="false" receiveShadows="false" nonRenderable="true" terrainDecal="true" materialIds="6"/>
+      <Shape name="warningStripeCornerGMNG" translation="1.1 0 1.1" shapeId="2" nodeId="14" castsShadows="false" receiveShadows="false" nonRenderable="true" terrainDecal="true" materialIds="5"/>
+      <Shape name="warningStripeCornerGMNG" translation="-1.1 0 -1.1" shapeId="3" nodeId="15" castsShadows="false" receiveShadows="false" nonRenderable="true" terrainDecal="true" materialIds="5"/>
+      <Shape name="warningStripeCornerGMNG" translation="1.1 0 -1.1" shapeId="4" nodeId="16" castsShadows="false" receiveShadows="false" nonRenderable="true" terrainDecal="true" materialIds="5"/>
     </TransformGroup>
   </Scene>
 

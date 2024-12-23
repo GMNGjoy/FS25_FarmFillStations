@@ -28,6 +28,7 @@
     <base>
         <filename>i3d/fillStation.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
     </base>
 
     <deletedNodes>
@@ -76,11 +77,14 @@
         </loadTrigger>
         <fillType priceScale="0.7" name="MILK" />
         <fillType priceScale="0.7" name="BUFFALOMILK" />
+        <fillType priceScale="0.7" name="GOATMILK" />
         <fillType priceScale="0.7" name="DIESEL" />
         <fillType priceScale="0.7" name="DEF" />
         <fillType priceScale="0.7" name="LIQUIDFERTILIZER" />
         <fillType priceScale="0.7" name="HERBICIDE" />
         <fillType priceScale="0.5" name="SILAGE_ADDITIVE" />
+        <fillType priceScale="0.7" name="LIQUIDMANURE" />
+        <fillType priceScale="0.7" name="DIGESTATE" />
         <fillType priceScale="0.7" name="METHANE" />
         <fillType priceScale="0" name="WATER" />
     </buyingStation>
@@ -88,8 +92,18 @@
     <sellingStation appearsOnStats="false" litersForFullPriceDrop="1000000" fullPriceRecoverHours="24" supportsExtension="false">
         <unloadTrigger fillTypeCategories="FILLSTATION_LIQUIDS" priceScale="1.3" exactFillRootNode="unloadBulkTrigger" aiNode="unloadStationAINode" />
         <palletTrigger fillTypeCategories="FILLSTATION_LIQUIDS" priceScale="1.3" triggerNode="unloadPalletTrigger" />
+        <fillType priceScale="1.3" name="MILK" />
+        <fillType priceScale="1.3" name="BUFFALOMILK" />
+        <fillType priceScale="1.3" name="GOATMILK" />
+        <fillType priceScale="1.3" name="DIESEL" />
+        <fillType priceScale="1.3" name="DEF" />
+        <fillType priceScale="1.3" name="LIQUIDFERTILIZER" />
+        <fillType priceScale="1.3" name="HERBICIDE" />
+        <fillType priceScale="1.3" name="SILAGE_ADDITIVE" />
         <fillType priceScale="10.0" name="LIQUIDMANURE" />
         <fillType priceScale="10.0" name="DIGESTATE" />
+        <fillType priceScale="1.3" name="METHANE" />
+        <fillType priceScale="1.3" name="WATER" />
     </sellingStation>
 
     <hotspots>

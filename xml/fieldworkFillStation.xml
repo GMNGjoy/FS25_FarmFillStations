@@ -28,6 +28,7 @@
     <base>
         <filename>i3d/fillStation.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
     </base>
 
     <deletedNodes>
@@ -74,6 +75,7 @@
             <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" shapeScaleSpread="0.8 0.8 1 0" controlPoint="3 0 0 0"/>
             <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
         </loadTrigger>
+        <fillType priceScale="0.7" name="SEEDS" />
         <fillType priceScale="0.7" name="LIME" />
         <fillType priceScale="0.7" name="FERTILIZER" />
         <fillType priceScale="0.7" name="LIQUIDFERTILIZER" />
@@ -88,6 +90,7 @@
     <sellingStation appearsOnStats="false" litersForFullPriceDrop="1000000" fullPriceRecoverHours="24" supportsExtension="false">
         <unloadTrigger fillTypeCategories="FILLSTATION_FIELDWORK" priceScale="1.3" exactFillRootNode="unloadBulkTrigger" aiNode="unloadStationAINode" />
         <palletTrigger fillTypeCategories="FILLSTATION_FIELDWORK" priceScale="1.3" triggerNode="unloadPalletTrigger" />
+        <fillType priceScale="1.3" name="SEEDS" />
         <fillType priceScale="1.3" name="LIME" />
         <fillType priceScale="1.3" name="FERTILIZER" />
         <fillType priceScale="1.3" name="LIQUIDFERTILIZER" />

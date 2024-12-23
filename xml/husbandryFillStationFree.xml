@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="buyingStationConfigurable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/1.5.0.0/placeable.xsd">
+<placeable type="buyingStationConfigurable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/placeable.xsd">
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <parentFile xmlFilename="xml/husbandryFillStation.xml">
@@ -19,6 +19,7 @@
             <set path="placeable.buyingStation.fillType(5)#priceScale" value="0" />
             <set path="placeable.buyingStation.fillType(6)#priceScale" value="0" />
             <set path="placeable.buyingStation.fillType(7)#priceScale" value="0" />
+            <set path="placeable.buyingStation.fillType(8)#priceScale" value="0" />
         
             <!-- set the default color to match -->
             <set path="placeable.colorConfigurations.colorConfiguration(1)#isDefault" value="false" />
@@ -68,7 +69,7 @@
         <name>$l10n_shopItem_husbandryFillStationFree</name>
         <image>icons/store_husbandryFillStation.dds</image>
         <brand>LIZARD</brand>
-        <species>placeable</species>
+        <species>PLACEABLE</species>
         <category>placeableMisc</category>
     </storeData>
 </placeable>
