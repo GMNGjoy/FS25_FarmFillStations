@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <translationContributors/>
+    <texts>
+        <text name="function_fillStationDiscount" text="30% zniżki przy zakupie hurtowym!" />
+        <text name="function_fillStationFree" text="Wszystko ZA DARMO!" />
+
+        <text name="shopItem_fieldworkFillStation" text="Stacja napełniania do prac polowych" />
+        <text name="shopItem_fieldworkFillStationFree" text="Darmowa stacja napełniania do prac polowych" />
+        <text name="shopItem_fieldworkFillStationSilo" text="Silos stacji napełniania do prac polowych" />
+        <text name="function_fieldworkFillStation" text="Załaduj swoje narzędzia do wszystkich zleceń kontraktowych." />
+        <text name="function_fieldworkFillStationSilo" text="Silos na twoje gospodarstwo do przechowywania wszystkich zapasów do prac polowych." />
+        
+        <text name="shopItem_husbandryFillStation" text="Stacja napełniania dla hodowli zwierząt" />
+        <text name="shopItem_husbandryFillStationFree" text="Darmowa stacja napełniania dla hodowli zwierząt" />
+        <text name="shopItem_husbandryFillStationSilo" text="Silos stacji napełniania dla hodowli zwierząt" />
+        <text name="function_husbandryFillStation" text="Karm swoje zwierzęta bez zbędnego wysiłku związanego z rolnictwem." />
+        <text name="function_husbandryFillStationSilo" text="Silos na twoje gospodarstwo do przechowywania wszystkich zapasów dla hodowli zwierząt." />
+        
+        <text name="shopItem_bulkFillStation" text="Stacja napełniania hurtowego" />
+        <text name="shopItem_bulkFillStationFree" text="Bezpłatna stacja napełniania hurtowego" />
+        <text name="shopItem_bulkFillStationSilo" text="Silos stacji napełniania hurtem" />
+        <text name="function_bulkFillStation" text="Brakuje Ci trochę? Kup dowolny produkt hurtowy." />
+        <text name="function_bulkFillStationSilo" text="Silos na twoje gospodarstwo do przechowywania wszystkich zapasów hurtowych." />
+        
+        <text name="shopItem_liquidFillStation" text="Stacja napełniania płynem" />
+        <text name="shopItem_liquidFillStationFree" text="Darmowa stacja napełniania cieczą" />
+        <text name="shopItem_liquidFillStationSilo" text="Silos stacji napełniania cieczą" />
+        <text name="function_liquidFillStation" text="Napełnij swój zbiornik lub beczkę." />
+        <text name="function_liquidFillStationSilo" text="Silos na twoje gospodaratwo do przechowywania wszystkich zapasów cieczy." />
+        
+        <text name="function_oldButStillGood" text="Może być trochę zardzewiały, ale zawsze niezawodny." />
+        <text name="function_alsoSellStation" text="Kupiłeś trochę za dużo? Sprzedaj to od razu!" />
+        
+        <text name="configuration_patina" text="Patyna" />
+        <text name="patina_light" text="Zardzewiały, ale niezawodny" />
+        <text name="patina_dark" text="Ciemny i zardzewiały" />
+
+        <text name="binColor_black1" text="Najczarniejsza czerń" />
+        <text name="binColor_black2" text="Trochę czarny" />
+        <text name="color_hellaBlack" text="Bardzo czarny, ziomek!" />
+        <text name="color_hellaOldBlack" text="Bardzo stary czarny" />
+    </texts>
+</l10n>
